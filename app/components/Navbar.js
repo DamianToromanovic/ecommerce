@@ -1,6 +1,4 @@
 export default function Navbar() {
-
-
   return (
     <nav className="w-full">
       {/* Top Navbar */}
@@ -33,7 +31,7 @@ export default function Navbar() {
       {/* Botton category links */}
       <div className="flex justify-center gap-10 bg-gray-200 py-3 shadow-md text-md font-semibold">
         <Link
-          href="/basmoebel"
+          href="/badmoebel"
           className="hover:text-blue-600 transition-colors"
         >
           BADMÖBEL{" "}
