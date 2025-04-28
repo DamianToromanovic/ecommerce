@@ -1,5 +1,4 @@
-import Image from "next/image";
-
+import Navbar from "./components/Navbar.js";
 export default function Home() {
-  return <h1>Hallo Welt</h1>;
+  return <Navbar />;
 }
