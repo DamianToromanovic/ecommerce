@@ -12,7 +12,6 @@ export default function Navbar() {
           <h1 className="text-2xl font-bold text-blue-700">Badezimmer-Welt</h1>
           <p className="text-xs text-gray-600 mt-1">wir lieben Bäder</p>
         </div>
-
         {/* Search bar */}
         <div className=" felx items-center">
           <input
