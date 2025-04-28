@@ -1,5 +1,7 @@
+
 import Hero from "./components/Hero.js";
 import TopCategories from "./components/TopCategories.js";
+import Navbar from "./components/Navbar.js";
 
 export default function Home() {
   return (
@@ -8,4 +10,13 @@ export default function Home() {
       <TopCategories />
     </>
   );
+
+import Navbar from "./components/Navbar.js";
+export default function Home() {
+  return (<>
+          <Navbar />
+          <Hero/>
+          <TopCategories/>
+          </>);
+
 }
