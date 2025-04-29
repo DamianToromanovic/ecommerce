@@ -2,10 +2,13 @@
 
 import CategorySidebar from "../components/CategorySidebar.js";
 import categories from "../lib/categories.js";
+import products from "../lib/flatProducts.js";
+import ProductGrid from "../components/ProductGrid.js";
 import Link from "next/link";
 
 export default function ZubehoerPage() {
   const zubehoerCategory = categories.find((cat) => cat.slug === "zubehoer");
+  const zubehoerProducts = products.filter((p) => p.category === "zubehoer");
 
   return (
     <div className="px-8 py-8">
@@ -43,6 +46,7 @@ export default function ZubehoerPage() {
               </Link>
             ))}
           </div>
+          <ProductGrid products={zubehoerProducts} />
         </main>
       </div>
     </div>
