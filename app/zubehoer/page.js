@@ -36,7 +36,7 @@ export default function ZubehoerPage() {
                 className="flex flex-col items-center bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition"
               >
                 <img
-                  src={`/images/products/${sub.slug}.jpg`}
+                  src={sub.image}
                   alt={sub.name}
                   className="w-full h-40 object-cover rounded-md mb-4"
                 />

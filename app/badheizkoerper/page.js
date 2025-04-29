@@ -29,7 +29,7 @@ export default function BadheizkoerperPage() {
 
         <main className="flex-1 px-8">
           <h2 className="text-3xl font-bold mb-8 text-blue-700 text-center">
-            Badheizkörper blabla
+            Badheizkörper
           </h2>
 
           <div className="grid gap-8 mt-10 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
@@ -40,7 +40,7 @@ export default function BadheizkoerperPage() {
                 className="flex flex-col items-center bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition"
               >
                 <img
-                  src={`/images/products/${sub.slug}.jpg`}
+                  src={sub.image}
                   alt={sub.name}
                   className="w-full h-40 object-cover rounded-md mb-4"
                 />

@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export default function BadmoebelPage() {
   const badmoebelCategory = categories.find((cat) => cat.slug === "badmoebel");
-  const badheizkoerperProducts = products.filter(
+  const badmoebelProducts = products.filter(
     (product) => product.category === "badheizkoerper"
   );
 
@@ -30,23 +30,25 @@ export default function BadmoebelPage() {
             Badmöbel
           </h2>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <div className="grid gap-8 mt-10 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {badmoebelCategory.subcategories.map((sub) => (
               <Link
                 key={sub.slug}
                 href={`/produkte/badmoebel/${sub.slug}`}
-                className="flex flex-col items-center hover:opacity-90"
+                className="flex flex-col items-center bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition"
               >
                 <img
-                  src={`/images/products/${sub.slug}.jpg`}
+                  src={sub.image}
                   alt={sub.name}
-                  className="w-[100px] h-[100px] object-contain mb-2 bg-white rounded shadow"
+                  className="w-full h-40 object-cover rounded-md mb-4"
                 />
-                <p className="text-sm text-center">{sub.name} →</p>
+                <p className="text-center text-base font-semibold text-blue-900">
+                  {sub.name} →
+                </p>
               </Link>
             ))}
           </div>
-          <ProductGrid products={badheizkoerperProducts} />
+          <ProductGrid products={badmoebelProducts} />
         </main>
       </div>
     </div>
