@@ -25,19 +25,21 @@ export default function BadmoebelPage() {
             Badmöbel
           </h2>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-10">
             {badmoebelCategory.subcategories.map((sub) => (
               <Link
                 key={sub.slug}
                 href={`/produkte/badmoebel/${sub.slug}`}
-                className="flex flex-col items-center hover:opacity-90"
+                className="flex flex-col items-center shadow-md rounded-b-md p-2 hover:shadow-lg transition"
               >
                 <img
-                  src={`/images/products/${sub.slug}.jpg`}
+                  src={`/images/products/${sub.slug}.jpg`} // Bild nach slug benennen
                   alt={sub.name}
-                  className="w-[100px] h-[100px] object-contain mb-2 bg-white rounded shadow"
+                  className="w-[170px] h-[120px] object-cover rounded-md mb-3"
                 />
-                <p className="text-sm text-center">{sub.name} →</p>
+                <p className="text-sm text-center text-blue-900 font-bold">
+                  {sub.name} ➡️
+                </p>
               </Link>
             ))}
           </div>
@@ -46,3 +48,4 @@ export default function BadmoebelPage() {
     </div>
   );
 }
+
