@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import products from "@/lib/flatProducts";
+import products from "../../lib/flatProducts.js";
 
 export default function ProductDetailPage({ params }) {
   const { category, id } = params;
