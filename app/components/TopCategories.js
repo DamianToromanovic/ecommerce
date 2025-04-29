@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const categories = [
+const topCategories = [
   {
     title: "Badmöbel-Sets",
     image: "/images/products/set2.jpg",
@@ -42,7 +42,7 @@ export default function TopCategories() {
       <h2 className="text-3xl font-bold text-center mb-10">Top Kategorien</h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
-        {categories.map((category, index) => (
+        {topCategories.map((category, index) => (
           <Link href={category.link} key={index} className="group block">
             <div className="overflow-hidden rounded-xl shadow-lg bg-background transition transform group-hover:scale-105">
               <div className="relative h-48 w-full">
