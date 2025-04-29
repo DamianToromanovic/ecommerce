@@ -23,7 +23,7 @@ export default function BadmoebelPage() {
       </div>
 
       <div className="flex px-8">
-        <CategorySidebar activeCategory="badheizkoerper" />
+        <CategorySidebar activeCategory="badmoebel" />
 
         <main className="flex-1 px-8">
           <h2 className="text-3xl font-bold mb-8 text-blue-700 text-center">
