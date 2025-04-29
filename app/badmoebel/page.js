@@ -1,10 +1,10 @@
 "use client";
 
-import CategorySidebar from "../components/CategorySidebar";
-import categories from "../lib/categories";
+import CategorySidebar from "../components/CategorySidebar.js";
+import categories from "../lib/categories.js";
 import Link from "next/link";
 
-export default function BadmoebelPage() {
+export default function BbadmoeelPage() {
   const badmoebelCategory = categories.find((cat) => cat.slug === "badmoebel");
 
   return (
@@ -25,20 +25,20 @@ export default function BadmoebelPage() {
             Badmöbel
           </h2>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-10">
+          <div className="grid gap-8 mt-10 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {badmoebelCategory.subcategories.map((sub) => (
               <Link
                 key={sub.slug}
                 href={`/produkte/badmoebel/${sub.slug}`}
-                className="flex flex-col items-center shadow-md rounded-b-md p-2 hover:shadow-lg transition"
+                className="flex flex-col items-center bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition"
               >
                 <img
-                  src={`/images/products/${sub.slug}.jpg`} // Bild nach slug benennen
+                  src={`/images/products/${sub.slug}.jpg`}
                   alt={sub.name}
-                  className="w-[170px] h-[120px] object-cover rounded-md mb-3"
+                  className="w-full h-40 object-cover rounded-md mb-4"
                 />
-                <p className="text-sm text-center text-blue-900 font-bold">
-                  {sub.name} ➡️
+                <p className="text-center text-base font-semibold text-blue-900">
+                  {sub.name} →
                 </p>
               </Link>
             ))}
@@ -48,4 +48,3 @@ export default function BadmoebelPage() {
     </div>
   );
 }
-
