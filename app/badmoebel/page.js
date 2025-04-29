@@ -1,11 +1,16 @@
 "use client";
 
 import CategorySidebar from "../components/CategorySidebar";
+import ProductGrid from "../components/ProductGrid.js";
+import products from "../lib/flatProducts.js";
 import categories from "../lib/categories";
 import Link from "next/link";
 
 export default function BadmoebelPage() {
   const badmoebelCategory = categories.find((cat) => cat.slug === "badmoebel");
+  const badmoebelProducts = products.filter(
+    (product) => product.category === "duschen"
+  );
 
   return (
     <div className="px-8 py-8">
@@ -41,6 +46,7 @@ export default function BadmoebelPage() {
               </Link>
             ))}
           </div>
+          <ProductGrid products={badmoebelProducts} />
         </main>
       </div>
     </div>

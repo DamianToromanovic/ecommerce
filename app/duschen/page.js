@@ -1,11 +1,17 @@
 "use client";
 
 import CategorySidebar from "../components/CategorySidebar.js";
+import ProductGrid from "../components/ProductGrid.js";
 import categories from "../lib/categories.js";
+import products from "../lib/flatProducts.js";
 import Link from "next/link";
 
 export default function DuschenPage() {
   const duschenCategory = categories.find((cat) => cat.slug === "duschen");
+
+  const duschenProducts = products.filter(
+    (product) => product.category === "duschen"
+  );
 
   return (
     <div className="px-8 py-8">
@@ -25,7 +31,7 @@ export default function DuschenPage() {
             Duschen
           </h2>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-12">
             {duschenCategory.subcategories.map((sub) => (
               <Link
                 key={sub.slug}
@@ -34,12 +40,15 @@ export default function DuschenPage() {
               >
                 <img
                   src={`/images/products/${sub.slug}.jpg`}
+                  alt={sub.name}
                   className="w-[100px] h-[100px] object-contain mb-2 bg-white rounded shadow"
                 />
                 <p className="text-sm text-center">{sub.name} →</p>
               </Link>
             ))}
           </div>
+
+          <ProductGrid products={duschenProducts} />
         </main>
       </div>
     </div>
