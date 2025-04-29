@@ -1,11 +1,16 @@
 "use client";
 
-import CategorySidebar from "../components/CategorySidebar.js";
-import categories from "../lib/categories.js";
+import CategorySidebar from "../components/CategorySidebar";
+import ProductGrid from "../components/ProductGrid.js";
+import products from "../lib/flatProducts.js";
+import categories from "../lib/categories";
 import Link from "next/link";
 
-export default function BbadmoeelPage() {
+export default function BadmoebelPage() {
   const badmoebelCategory = categories.find((cat) => cat.slug === "badmoebel");
+  const badmoebelProducts = products.filter(
+    (product) => product.category === "duschen"
+  );
 
   return (
     <div className="px-8 py-8">
@@ -25,26 +30,26 @@ export default function BbadmoeelPage() {
             Badmöbel
           </h2>
 
-          <div className="grid gap-8 mt-10 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {badmoebelCategory.subcategories.map((sub) => (
               <Link
                 key={sub.slug}
                 href={`/produkte/badmoebel/${sub.slug}`}
-                className="flex flex-col items-center bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition"
+                className="flex flex-col items-center hover:opacity-90"
               >
                 <img
                   src={`/images/products/${sub.slug}.jpg`}
                   alt={sub.name}
-                  className="w-full h-40 object-cover rounded-md mb-4"
+                  className="w-[100px] h-[100px] object-contain mb-2 bg-white rounded shadow"
                 />
-                <p className="text-center text-base font-semibold text-blue-900">
-                  {sub.name} →
-                </p>
+                <p className="text-sm text-center">{sub.name} →</p>
               </Link>
             ))}
           </div>
+          <ProductGrid products={badmoebelProducts} />
         </main>
       </div>
     </div>
   );
 }
+

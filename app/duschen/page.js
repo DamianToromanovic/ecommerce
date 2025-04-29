@@ -1,11 +1,17 @@
 "use client";
 
 import CategorySidebar from "../components/CategorySidebar.js";
+import ProductGrid from "../components/ProductGrid.js";
 import categories from "../lib/categories.js";
+import products from "../lib/flatProducts.js";
 import Link from "next/link";
 
 export default function DuschenPage() {
   const duschenCategory = categories.find((cat) => cat.slug === "duschen");
+
+  const duschenProducts = products.filter(
+    (product) => product.category === "duschen"
+  );
 
   return (
     <div className="px-8 py-8">
@@ -25,24 +31,24 @@ export default function DuschenPage() {
             Duschen
           </h2>
 
-          <div className="grid gap-8 mt-10 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-12">
             {duschenCategory.subcategories.map((sub) => (
               <Link
                 key={sub.slug}
                 href={`/produkte/duschen/${sub.slug}`}
-                className="flex flex-col items-center bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition"
+                className="flex flex-col items-center hover:opacity-90"
               >
                 <img
                   src={`/images/products/${sub.slug}.jpg`}
                   alt={sub.name}
-                  className="w-full h-40 object-cover rounded-md mb-4"
+                  className="w-[100px] h-[100px] object-contain mb-2 bg-white rounded shadow"
                 />
-                <p className="text-center text-base font-semibold text-blue-900">
-                  {sub.name} →
-                </p>
+                <p className="text-sm text-center">{sub.name} →</p>
               </Link>
             ))}
           </div>
+
+          <ProductGrid products={duschenProducts} />
         </main>
       </div>
     </div>
