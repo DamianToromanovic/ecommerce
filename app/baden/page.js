@@ -3,9 +3,14 @@
 import CategorySidebar from "../components/CategorySidebar.js";
 import categories from "../lib/categories.js";
 import Link from "next/link";
+import ProductGrid from "../components/ProductGrid.js";
+import products from "../lib/flatProducts.js";
 
 export default function BadenPage() {
   const badenCategory = categories.find((cat) => cat.slug === "baden");
+  const badenProducts = products.filter(
+    (product) => product.category === "baden"
+  );
 
   return (
     <div className="px-8 py-8">
@@ -43,6 +48,7 @@ export default function BadenPage() {
               </Link>
             ))}
           </div>
+          <ProductGrid products={badenProducts} />
         </main>
       </div>
     </div>

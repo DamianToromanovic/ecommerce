@@ -8,8 +8,8 @@ import Link from "next/link";
 
 export default function BadmoebelPage() {
   const badmoebelCategory = categories.find((cat) => cat.slug === "badmoebel");
-  const badmoebelProducts = products.filter(
-    (product) => product.category === "duschen"
+  const badheizkoerperProducts = products.filter(
+    (product) => product.category === "badheizkoerper"
   );
 
   return (
@@ -23,7 +23,7 @@ export default function BadmoebelPage() {
       </div>
 
       <div className="flex px-8">
-        <CategorySidebar activeCategory="badmoebel" />
+        <CategorySidebar activeCategory="badheizkoerper" />
 
         <main className="flex-1 px-8">
           <h2 className="text-3xl font-bold mb-8 text-blue-700 text-center">
@@ -46,10 +46,9 @@ export default function BadmoebelPage() {
               </Link>
             ))}
           </div>
-          <ProductGrid products={badmoebelProducts} />
+          <ProductGrid products={badheizkoerperProducts} />
         </main>
       </div>
     </div>
   );
 }
-

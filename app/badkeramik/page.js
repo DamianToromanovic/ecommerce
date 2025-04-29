@@ -2,11 +2,16 @@
 
 import CategorySidebar from "../components/CategorySidebar.js";
 import categories from "../lib/categories.js";
+import ProductGrid from "../components/ProductGrid.js";
+import products from "../lib/flatProducts.js";
 import Link from "next/link";
 
 export default function BadkeramikPage() {
   const badkeramikCategory = categories.find(
     (cat) => cat.slug === "badkeramik"
+  );
+  const badkeramikProducts = products.filter(
+    (product) => product.category === "badkeramik"
   );
 
   return (
@@ -45,6 +50,7 @@ export default function BadkeramikPage() {
               </Link>
             ))}
           </div>
+          <ProductGrid products={badkeramikProducts} />
         </main>
       </div>
     </div>

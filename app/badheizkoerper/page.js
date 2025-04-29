@@ -3,10 +3,15 @@
 import CategorySidebar from "../components/CategorySidebar.js";
 import categories from "../lib/categories.js";
 import Link from "next/link";
+import ProductGrid from "../components/ProductGrid.js";
+import products from "../lib/flatProducts.js";
 
 export default function BadheizkoerperPage() {
   const badheizkoerperCategory = categories.find(
     (cat) => cat.slug === "badheizkoerper"
+  );
+  const badheizkoerperProducts = products.filter(
+    (product) => product.category === "badheizkoerper"
   );
 
   return (
@@ -45,6 +50,7 @@ export default function BadheizkoerperPage() {
               </Link>
             ))}
           </div>
+          <ProductGrid products={badheizkoerperProducts} />
         </main>
       </div>
     </div>
