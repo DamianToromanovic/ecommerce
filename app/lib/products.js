@@ -1,0 +1,276 @@
+const categories = [
+  {
+    id: "badmoebel",
+    name: "Badmöbel",
+    subcategories: [
+      {
+        id: "badmoebel-sets",
+        name: "Badmöbel Sets",
+        products: [
+          {
+            id: "1",
+            name: "Badmöbel-Set Elegance",
+            description:
+              "Modernes Badmöbel-Set mit Spiegel und Unterschrank in Hochglanz-Optik.",
+            price: 899.99,
+            stock: 12,
+            image: "/images/products/set1.png",
+          },
+          {
+            id: "2",
+            name: "Badmöbel-Set Classic",
+            description:
+              "Klassisches Badmöbel-Set aus Massivholz für ein warmes Badezimmer-Ambiente.",
+            price: 749.99,
+            stock: 5,
+            image: "/images/products/set2.jpg",
+          },
+          {
+            id: "3",
+            name: "Badmöbel-Set Minimal",
+            description:
+              "Minimalistisches Badmöbel-Set mit großzügigem Stauraum und LED-Beleuchtung.",
+            price: 699.99,
+            stock: 8,
+            image: "/images/products/set.jpg",
+          },
+        ],
+      },
+      {
+        id: "waschtische",
+        name: "Waschtische mit Unterschrank",
+        products: [
+          {
+            id: "4",
+            name: "Waschtisch Urban",
+            description:
+              "Kompakter Waschtisch mit Unterschrank – ideal für kleine Bäder.",
+            price: 499.99,
+            stock: 15,
+            image: "/images/products/waschtisch1.jpg",
+          },
+          {
+            id: "5",
+            name: "Waschtisch Deluxe",
+            description:
+              "Luxuriöser Waschtisch mit doppelseitigem Unterschrank und Marmorplatte.",
+            price: 899.99,
+            stock: 4,
+            image: "/images/products/waschtisch2.jpg",
+          },
+          {
+            id: "6",
+            name: "Waschtisch Nordic",
+            description:
+              "Skandinavischer Stil: Heller Waschtisch mit Holzoptik-Unterschrank.",
+            price: 599.99,
+            stock: 10,
+            image: "/images/products/waschtisch3.jpg",
+          },
+        ],
+      },
+      {
+        id: "spiegelschraenke",
+        name: "Spiegelschränke",
+        products: [
+          {
+            id: "7",
+            name: "Spiegelschrank Vision",
+            description:
+              "Großer Spiegelschrank mit LED-Beleuchtung und Steckdose innen.",
+            price: 399.99,
+            stock: 9,
+            image: "/images/products/spiegelschrank1.jpg",
+          },
+          {
+            id: "8",
+            name: "Spiegelschrank Compact",
+            description: "Kompakter Spiegelschrank mit 2 Türen und Ablagen.",
+            price: 299.99,
+            stock: 18,
+            image: "/images/products/spiegelschrank2.jpg",
+          },
+          {
+            id: "9",
+            name: "Spiegelschrank Lux",
+            description:
+              "Eleganter Spiegelschrank mit Touch-Sensor und Dimmfunktion.",
+            price: 499.99,
+            stock: 7,
+            image: "/images/products/spiegelschrank3.jpeg",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "duschen",
+    name: "Duschen",
+    subcategories: [
+      {
+        id: "duschkabinen",
+        name: "Duschkabinen",
+        products: [
+          {
+            id: "10",
+            name: "Duschkabine Corner",
+            description:
+              "Eck-Duschkabine aus Sicherheitsglas mit Schiebetüren.",
+            price: 649.99,
+            stock: 6,
+            image: "/images/products/duschkabine1.jpg",
+          },
+          {
+            id: "11",
+            name: "Walk-In Duschkabine",
+            description:
+              "Offene Walk-In Duschkabine für ein modernes Badezimmergefühl.",
+            price: 799.99,
+            stock: 5,
+            image: "/images/products/duschkabine2.jpeg",
+          },
+          {
+            id: "12",
+            name: "Runddusche Compact",
+            description:
+              "Platzsparende Runddusche ideal für kleine Badezimmer.",
+            price: 599.99,
+            stock: 8,
+            image: "/images/products/duschkabine3.jpg",
+          },
+        ],
+      },
+      {
+        id: "duschwannen",
+        name: "Duschwannen",
+        products: [
+          {
+            id: "13",
+            name: "Duschwanne Slim",
+            description:
+              "Ultra-flache Duschwanne mit rutschhemmender Oberfläche.",
+            price: 349.99,
+            stock: 10,
+            image: "/images/products/duschwanne1.jpg",
+          },
+          {
+            id: "14",
+            name: "Duschwanne Classic",
+            description: "Klassische Duschwanne aus Sanitäracryl.",
+            price: 299.99,
+            stock: 12,
+            image: "/images/products/duschwanne2.jpg",
+          },
+          {
+            id: "15",
+            name: "Duschwanne Stone",
+            description: "Edle Steinoptik für luxuriöse Badezimmer.",
+            price: 499.99,
+            stock: 7,
+            image: "/images/products/duschwanne3.jpg",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "baden",
+    name: "Baden",
+    subcategories: [
+      {
+        id: "badewannen",
+        name: "Badewannen",
+        products: [
+          {
+            id: "16",
+            name: "Freistehende Badewanne Pure",
+            description:
+              "Elegante freistehende Wanne für ultimatives Badeerlebnis.",
+            price: 1199.99,
+            stock: 4,
+            image: "/images/products/badewann1.jpg",
+          },
+          {
+            id: "17",
+            name: "Badewanne Relax",
+            description:
+              "Komfort-Badewanne mit ergonomischer Form und Armlehnen.",
+            price: 999.99,
+            stock: 6,
+            image: "/images/products/badewanne2.jpg",
+          },
+          {
+            id: "18",
+            name: "Badewanne Eco",
+            description: "Nachhaltige Badewanne aus recyclebarem Material.",
+            price: 899.99,
+            stock: 9,
+            image: "/images/products/badewann3.jpg",
+          },
+        ],
+      },
+      {
+        id: "badewannenaufsaetze",
+        name: "Badewannenaufsätze",
+        products: [
+          {
+            id: "19",
+            name: "Badewannenaufsatz Glas",
+            description: "Moderner Badewannenaufsatz aus Klarglas.",
+            price: 249.99,
+            stock: 14,
+            image: "/images/products/aufsatz.jpg",
+          },
+          {
+            id: "20",
+            name: "Badewannenaufsatz Faltbar",
+            description: "Faltbarer Aufsatz für flexible Nutzung.",
+            price: 199.99,
+            stock: 17,
+            image: "/images/products/aufsatz2.jpg",
+          },
+          {
+            id: "21",
+            name: "Badewannenaufsatz Premium",
+            description: "Hochwertiger Aufsatz mit Beschichtung gegen Kalk.",
+            price: 299.99,
+            stock: 11,
+            image: "/images/products/aufsatz3.jpg",
+          },
+        ],
+      },
+      {
+        id: "badewannenarmaturen",
+        name: "Badewannenarmaturen",
+        products: [
+          {
+            id: "22",
+            name: "Armatur Elegance",
+            description: "Elegante Badewannenarmatur mit Thermostat.",
+            price: 349.99,
+            stock: 15,
+            image: "/images/products/armaturen1.jpg",
+          },
+          {
+            id: "23",
+            name: "Armatur Classic",
+            description: "Klassische Wannenarmatur mit Handbrause.",
+            price: 299.99,
+            stock: 12,
+            image: "/images/products/armaturen2.jpg",
+          },
+          {
+            id: "24",
+            name: "Armatur Minimal",
+            description: "Minimalistische Badewannenarmatur aus Edelstahl.",
+            price: 399.99,
+            stock: 8,
+            image: "/images/products/armaturen3.jpg",
+          },
+        ],
+      },
+    ],
+  },
+];
+
+export default categories;
