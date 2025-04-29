@@ -5,14 +5,14 @@ import Link from "next/link";
 export default function Navbar() {
   return (
     <nav className="w-full">
-      {/* Top Navbar */}
       <div className="flex justify-between items-center bg-gray-100 px-8 py-4">
-        {/* Logo + tagline */}
-        <div>
-          <h1 className="text-2xl font-bold text-blue-700">Badezimmer-Welt</h1>
-          <p className="text-xs text-gray-600 mt-1">wir lieben Bäder</p>
-        </div>
-        {/* Search bar */}
+        <Link href="/" className="flex flex-col text-blue-700 hover:opacity-80">
+          <div>
+            <span className="text-2xl font-bold">Badezimmer-Welt</span>
+            <p className="text-xs text-gray-600 mt-1">wir lieben Bäder</p>
+          </div>
+        </Link>
+
         <div className=" felx items-center">
           <input
             type="text"
@@ -24,14 +24,13 @@ export default function Navbar() {
           </button>
         </div>
 
-        {/* icones */}
         <div className="flex gap-6 text-2xl text-gray-600">
           <span className="cursor-pointer hover:text-blue-600">👤</span>
           <span className="cursor-pointer hover:text-blue-600">❤️</span>
           <span className="cursor-pointer hover:text-blue-600">🛒</span>
         </div>
       </div>
-      {/* Botton category links */}
+
       <div className="flex justify-center gap-10 bg-gray-200 py-3 shadow-md text-md font-semibold">
         <Link
           href="/badmoebel"
@@ -69,12 +68,8 @@ export default function Navbar() {
         >
           ZUBEHÖR{" "}
         </Link>
-        <Link href="/marken" className="hover:text-blue-600 transition-colors">
-          MARKEN{" "}
-        </Link>
       </div>
 
-      {/* sale banner below navbar */}
       <div className="bg-orange-500 text-white text-center py-2 text-sm font-semibold flex justify-center items-center gap-4">
         <span>% SALE - Badmöbel zusätzlich rabattiert</span>
         <button className="bg-white text-orange-600 px-3 py-1 rounded-md text-xs hover:bg-orange-100 transition">
