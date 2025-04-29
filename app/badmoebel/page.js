@@ -67,83 +67,85 @@ export default function BadmoebelPage() {
           </p>
 
           {/* Grid viw - Empty gor now */}
-          <div className="grid grid-cols-4 gap-8">
-            <div className="flex flex-col items-center">
+          <div className="grid grid-cols-4 gap-8 mt-10">
+            <div className="flex flex-col items-center shadow-md rounded-b-md p-2 hover:shadow-lg transition">
               <img
-                src=""
+                src="/images/products/set1.png"
                 alt="Badmöbel Sets"
-                className="w-[100px] h-[100px] object-contain mb-2 "
+                className="w-[170px] h-[120px] object-cover rounded-md mb-3"
               ></img>
-              <p className="text-sm text-center cursor-pointer">
-                Badmöbel Sets →
+              <p className="text-sm text-center cursor-pointer text-blue-900 font-bold">
+                Badmöbel Sets ➡️
               </p>
             </div>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center shadow-md rounded-b-md p-2 hover:shadow-lg transition">
               <img
-                src=""
+                src="/images/products/waschtisch1.jpg"
                 alt="Waschtische mit Unterschrank "
-                className="w-[100px] h-[100px] object-contain mb-2"
+                className="w-[170px] h-[120px] object-cover rounded-md mb-3"
               ></img>
-              <p className="text-sm text-center cursor-pointer">
-                Waschtische mit Unterschrank →
+              <p className="text-sm text-center cursor-pointer text-blue-900 font-bold">
+                Waschtische mit Unterschrank ➡️
               </p>
             </div>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center shadow-md rounded-b-md p-2 hover:shadow-lg transition">
               <img
-                src=""
+                src="/images/products/spiegelschrank3.jpeg"
                 alt="Spiegelschränke"
-                className="w-[100px] h-[100px] object-contain mb-2"
+                className="w-[170px] h-[120px] object-cover rounded-md mb-3"
               ></img>
-              <p className="text-sm text-center cursor-pointer">
-                Spiegelschränke →
+              <p className="text-sm text-center cursor-pointer text-blue-900 font-bold">
+                Spiegelschränke ➡️
               </p>
             </div>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center shadow-md rounded-b-md p-2 hover:shadow-lg transition">
               <img
-                src=""
+                src="/images/products/spiegelschrank2.jpg"
                 alt="Badspiegel"
-                className="w-[100px] h-[100px] object-contain mb-2"
+                className="w-[170px] h-[120px] object-cover rounded-md mb-3"
               ></img>
-              <p className="text-sm text-center cursor-pointer">Badspiegel →</p>
+              <p className="text-sm text-center cursor-pointer text-blue-900 font-bold">
+                Badspiegel ➡️
+              </p>
             </div>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center shadow-md rounded-b-md p-2 hover:shadow-lg transition">
               <img
-                src=""
+                src="/images/products/set2.jpg"
                 alt="Badschränke"
-                className="w-[100px] h-[100px] object-contain mb-2"
+                className="w-[170px] h-[120px] object-cover rounded-md mb-3"
               ></img>
-              <p className="text-sm text-center cursor-pointer">
-                Badschränke →
+              <p className="text-sm text-center cursor-pointer text-blue-900 font-bold">
+                Badschränke ➡️
               </p>
             </div>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center shadow-md rounded-b-md p-2 hover:shadow-lg transition">
               <img
-                src=""
+                src="/images/products/set1.png"
                 alt="Waschtischunterschränke"
-                className="w-[100px] h-[100px] object-contain mb-2"
+                className="w-[170px] h-[120px] object-cover rounded-md mb-3"
               ></img>
-              <p className="text-sm text-center cursor-pointer">
-                Waschtischunterschränke →
+              <p className="text-sm text-center cursor-pointer text-blue-900 font-bold">
+                Waschtischunterschränke ➡️
               </p>
             </div>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center shadow-md rounded-b-md p-2 hover:shadow-lg transition">
               <img
-                src=""
+                src="/images/products/set1.png"
                 alt="Einzelmöbel"
-                className="w-[100px] h-[100px] object-contain mb-2"
+                className="w-[170px] h-[120px] object-cover rounded-md mb-3"
               ></img>
-              <p className="text-sm text-center cursor-pointer">
-                Einzelmöbel →
+              <p className="text-sm text-center cursor-pointer text-blue-900 font-bold">
+                Einzelmöbel ➡️
               </p>
             </div>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center shadow-md rounded-b-md p-2 hover:shadow-lg transition">
               <img
-                src=""
+                src="/images/products/set1.png"
                 alt="Gäste- & Kleinbäder"
-                className="w-[100px] h-[100px] object-contain mb-2"
+                className="w-[170px] h-[120px] object-cover rounded-md mb-3"
               ></img>
-              <p className="text-sm text-center cursor-pointer">
-                Gäste- & Kleinbäder →
+              <p className="text-sm text-center cursor-pointer text-blue-900 font-bold">
+                Gäste- & Kleinbäder ➡️
               </p>
             </div>
           </div>
