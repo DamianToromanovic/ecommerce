@@ -40,14 +40,12 @@ export default function SearchBar() {
             </h3>
             <ul className="space-y-2">
               {allFilteredCategories.slice(0, 6).map((cat, index) => (
-                <Link href={`${!cat.category&&cat.category, "/"}${!cat.subcategory&&cat.subcategory, "/"}${}`}>
-                  <li
-                    key={index}
-                    className="cursor-pointer text-sm text-blue-700 hover:underline"
-                  >
-                    {cat.name}
-                  </li>
-                </Link>
+                <li
+                  key={index}
+                  className="cursor-pointer text-sm text-blue-700 hover:underline"
+                >
+                  {cat.name}
+                </li>
               ))}
             </ul>
           </div>
