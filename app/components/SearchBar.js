@@ -5,19 +5,44 @@ import { useState } from "react";
 
 export default function SearchBar() {
   const [searchedTerm, setSearchedTerm] = useState("");
-  const filteredProducts = products.filter((p) =>
-    p.name.toLowerCase().includes(searchedTerm)
-  );
-  const filteredCategories = products.filter((p) =>
-    p.category.toLowerCase().includes(searchedTerm)
-  );
-  const filteredSubcategories = products.filter((p) =>
-    p.subcategory.toLowerCase().includes(searchedTerm)
-  );
+
+  const filteredProducts = products
+    .filter((p) => p.name.toLowerCase().includes(searchedTerm))
+    .map((p) => ({
+      type: "product",
+      name: p.name,
+      categorySlug: p.category,
+      subcategorySlug: p.subcategory,
+      id: p.id,
+      image: p.image,
+      price: p.price,
+    }));
+
+  const filteredCategories = products
+    .filter((p) => p.category.toLowerCase().includes(searchedTerm))
+    .map((p) => ({
+      type: "category",
+      name: p.category,
+      slug: p.category,
+    }));
+
+  const filteredSubcategories = products
+    .filter((p) => p.subcategory.toLowerCase().includes(searchedTerm))
+    .map((p) => ({
+      type: "subcategory",
+      name: p.subcategory,
+      slug: p.subcategory,
+      categorySlug: p.category,
+    }));
+
   const allFilteredCategories = [
     ...filteredSubcategories,
     ...filteredCategories,
-  ];
+  ].filter(
+    (item, index, self) =>
+      index ===
+      self.findIndex((t) => t.slug === item.slug && t.type === item.type)
+  );
   console.log("hier", allFilteredCategories);
 
   return (
@@ -39,14 +64,23 @@ export default function SearchBar() {
               Kategorien passend zu deiner Suche
             </h3>
             <ul className="space-y-2">
-              {allFilteredCategories.slice(0, 6).map((cat, index) => (
-                <li
-                  key={index}
-                  className="cursor-pointer text-sm text-blue-700 hover:underline"
-                >
-                  {cat.name}
-                </li>
-              ))}
+              {allFilteredCategories.slice(0, 6).map((cat, index) => {
+                let href = "/";
+
+                if (cat.type === "category") {
+                  href = `/${cat.slug}`;
+                } else if (cat.type === "subcategory") {
+                  href = `/${cat.categorySlug}/${cat.slug}`;
+                }
+
+                return (
+                  <Link key={index} href={href}>
+                    <li className="cursor-pointer text-sm text-blue-700 hover:underline">
+                      {cat.name}
+                    </li>
+                  </Link>
+                );
+              })}
             </ul>
           </div>
 
@@ -56,7 +90,10 @@ export default function SearchBar() {
             </h3>
             <div className="grid grid-cols-2 gap-4">
               {filteredProducts.slice(0, 4).map((p) => (
-                <Link href={p.id}>
+                <Link
+                  key={p.id}
+                  href={`/${p.categorySlug}/${p.subcategorySlug}/${p.id}`}
+                >
                   <div
                     key={p.id}
                     className="flex items-center gap-4 border rounded-md p-3 hover:shadow cursor-pointer"
