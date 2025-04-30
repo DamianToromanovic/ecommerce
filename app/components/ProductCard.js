@@ -1,14 +1,8 @@
 import Link from "next/link";
-import categories from "../lib/categories.js";
 
 export default function ProductCard({ product }) {
-  const category = categories.find((cat) => cat.slug === product.category);
-  const subcategory = category?.subcategories.find(
-    (sub) => sub.slug === product.subcategory
-  );
-
-  const imageUrl = subcategory?.image || "/images/products/default.jpg";
-
+  const imageUrl = product.image;
+  console.log(product);
   return (
     <Link href={`/${product.category}/${product.id}`}>
       <div className="border p-4 rounded-lg hover:shadow-md transition cursor-pointer">
