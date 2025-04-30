@@ -10,7 +10,7 @@ export default function ProductCard({ product }) {
   const imageUrl = subcategory?.image || "/images/products/default.jpg";
 
   return (
-    <Link href={`/produkte/${product.category}/${product.id}`}>
+    <Link href={`/${product.category}/${product.id}`}>
       <div className="border p-4 rounded-lg hover:shadow-md transition cursor-pointer">
         <img
           src={imageUrl}

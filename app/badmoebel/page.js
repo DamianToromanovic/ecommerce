@@ -9,7 +9,7 @@ import Link from "next/link";
 export default function BadmoebelPage() {
   const badmoebelCategory = categories.find((cat) => cat.slug === "badmoebel");
   const badmoebelProducts = products.filter(
-    (product) => product.category === "badheizkoerper"
+    (product) => product.category === "badmoebel"
   );
 
   return (
