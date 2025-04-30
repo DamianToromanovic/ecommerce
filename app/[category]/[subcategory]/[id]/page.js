@@ -1,11 +1,13 @@
 import { notFound } from "next/navigation";
-import products from "../../lib/flatProducts.js";
-import ProductTabs from "@/app/components/ProductTabs.js";
+import products from "../../../lib/flatProducts.js";
 
 export default function ProductDetailPage({ params }) {
-  const { category, id } = params;
+  const { category, subcategory, id } = params;
 
-  const product = products.find((p) => p.id === id && p.category === category);
+  const product = products.find(
+    (p) =>
+      p.id === id && p.category === category && p.subcategory === subcategory
+  );
 
   if (!product) {
     notFound();
@@ -76,7 +78,6 @@ export default function ProductDetailPage({ params }) {
             </div>
           </div>
         </div>
-        <ProductTabs />
       </div>
     </>
   );

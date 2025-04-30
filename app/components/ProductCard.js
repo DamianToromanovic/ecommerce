@@ -4,7 +4,7 @@ export default function ProductCard({ product }) {
   const imageUrl = product.image;
   console.log(product);
   return (
-    <Link href={`/${product.category}/${product.id}`}>
+    <Link href={`/${product.category}/${product.subcategory}/${product.id}`}>
       <div className="border p-4 rounded-lg hover:shadow-md transition cursor-pointer">
         <img
           src={imageUrl}
