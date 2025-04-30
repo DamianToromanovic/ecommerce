@@ -47,7 +47,7 @@ const categories = [
             articleNumber: "HSK-426018",
             width: "103.2cm",
             depth: "46.5 cm",
-            image: "/images/products/set.jpg",
+            image: "/images/products/set1.png",
           },
         ],
       },

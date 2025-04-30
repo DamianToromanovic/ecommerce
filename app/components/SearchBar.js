@@ -39,11 +39,10 @@ export default function SearchBar() {
     ...filteredSubcategories,
     ...filteredCategories,
   ].filter(
-    (item, index, self) =>
+    (element, index, array) =>
       index ===
-      self.findIndex((t) => t.slug === item.slug && t.type === item.type)
+      array.findIndex((t) => t.slug === element.slug && t.type === element.type)
   );
-  console.log("hier", allFilteredCategories);
 
   return (
     <div className="relative felx items-center">
@@ -61,26 +60,30 @@ export default function SearchBar() {
         <div className="absolute top-full mt-2 left-1/2 -translate-x-1/2 w-full min-w-3xl max-w-5xl bg-white border border-gray-300 shadow-lg rounded-xl p-6 flex gap-8 z-50">
           <div className="w-1/3">
             <h3 className="text-sm font-semibold text-gray-600 mb-3">
-              Kategorien passend zu deiner Suche
+              Kategorien
             </h3>
             <ul className="space-y-2">
-              {allFilteredCategories.slice(0, 6).map((cat, index) => {
-                let href = "/";
+              {allFilteredCategories.length === 0 ? (
+                <div>Keine Kategorien gefunden</div>
+              ) : (
+                allFilteredCategories.slice(0, 10).map((cat, index) => {
+                  let href = "/";
 
-                if (cat.type === "category") {
-                  href = `/${cat.slug}`;
-                } else if (cat.type === "subcategory") {
-                  href = `/${cat.categorySlug}/${cat.slug}`;
-                }
+                  if (cat.type === "category") {
+                    href = `/${cat.slug}`;
+                  } else if (cat.type === "subcategory") {
+                    href = `/${cat.categorySlug}/${cat.slug}`;
+                  }
 
-                return (
-                  <Link key={index} href={href}>
-                    <li className="cursor-pointer text-sm text-blue-700 hover:underline">
-                      {cat.name}
-                    </li>
-                  </Link>
-                );
-              })}
+                  return (
+                    <Link key={index} href={href}>
+                      <li className="cursor-pointer text-sm text-blue-700 hover:underline">
+                        {cat.name}
+                      </li>
+                    </Link>
+                  );
+                })
+              )}
             </ul>
           </div>
 
@@ -89,31 +92,35 @@ export default function SearchBar() {
               Produkttreffer
             </h3>
             <div className="grid grid-cols-2 gap-4">
-              {filteredProducts.slice(0, 4).map((p) => (
-                <Link
-                  key={p.id}
-                  href={`/${p.categorySlug}/${p.subcategorySlug}/${p.id}`}
-                >
-                  <div
+              {filteredProducts.length === 0 ? (
+                <div>Keine Produkte gefunden</div>
+              ) : (
+                filteredProducts.slice(0, 4).map((p) => (
+                  <Link
                     key={p.id}
-                    className="flex items-center gap-4 border rounded-md p-3 hover:shadow cursor-pointer"
+                    href={`/${p.categorySlug}/${p.subcategorySlug}/${p.id}`}
                   >
-                    <img
-                      src={p.image}
-                      alt={p.name}
-                      className="w-16 h-16 object-cover rounded"
-                    />
-                    <div>
-                      <p className="text-sm font-medium text-gray-800">
-                        {p.name}
-                      </p>
-                      <p className="text-xs text-gray-500">
-                        €{p.price.toFixed(2)}
-                      </p>
+                    <div
+                      key={p.id}
+                      className="flex items-center gap-4 border rounded-md p-3 hover:shadow cursor-pointer"
+                    >
+                      <img
+                        src={p.image}
+                        alt={p.name}
+                        className="w-16 h-16 object-cover rounded"
+                      />
+                      <div>
+                        <p className="text-sm font-medium text-gray-800">
+                          {p.name}
+                        </p>
+                        <p className="text-xs text-gray-500">
+                          €{p.price.toFixed(2)}
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                </Link>
-              ))}
+                  </Link>
+                ))
+              )}
             </div>
 
             <div className="text-right mt-4">
