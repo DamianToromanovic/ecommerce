@@ -1,5 +1,15 @@
-import Image from "next/image";
+import Hero from "./components/Hero.js";
+import TopCategories from "./components/TopCategories.js";
+import Footer from "./components/Footer.js";
+import ProductCarousel from "./components/ProductCarousel.js";
 
 export default function Home() {
-  return <h1>Hallo Welt</h1>;
+  return (
+    <>
+      <Hero />
+      <TopCategories />
+      <ProductCarousel />
+      <Footer />
+    </>
+  );
 }
