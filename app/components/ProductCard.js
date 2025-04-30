@@ -1,5 +1,5 @@
 import Link from "next/link";
-import categories from "../lib/categories.js"; // passe den Pfad an je nach deinem Projekt
+import categories from "../lib/categories.js";
 
 export default function ProductCard({ product }) {
   const category = categories.find((cat) => cat.slug === product.category);
