@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import products from "../../lib/flatProducts.js";
+import ProductTabs from "@/app/components/ProductTabs.js";
 
 export default function ProductDetailPage({ params }) {
   const { category, id } = params;
@@ -84,6 +85,7 @@ export default function ProductDetailPage({ params }) {
             </div>
           </div>
         </div>
+        <ProductTabs />
       </div>
     </>
   );
