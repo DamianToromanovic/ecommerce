@@ -14,6 +14,14 @@ const categories = [
               "Modernes Badmöbel-Set mit Spiegel und Unterschrank in Hochglanz-Optik.",
             price: 899.99,
             stock: 12,
+<<<<<<< HEAD
+=======
+            oldPrice: 1179.0,
+            discount: 24,
+            articleNumber: "HSK-426018",
+            width: "103.2cm",
+            depth: "46.5 cm",
+>>>>>>> main
             image: "/images/products/set1.png",
           },
           {
@@ -23,6 +31,14 @@ const categories = [
               "Klassisches Badmöbel-Set aus Massivholz für ein warmes Badezimmer-Ambiente.",
             price: 749.99,
             stock: 5,
+<<<<<<< HEAD
+=======
+            oldPrice: 1179.0,
+            discount: 24,
+            articleNumber: "HSK-426018",
+            width: "103.2cm",
+            depth: "46.5 cm",
+>>>>>>> main
             image: "/images/products/set2.jpg",
           },
           {
@@ -32,6 +48,14 @@ const categories = [
               "Minimalistisches Badmöbel-Set mit großzügigem Stauraum und LED-Beleuchtung.",
             price: 699.99,
             stock: 8,
+<<<<<<< HEAD
+=======
+            oldPrice: 1179.0,
+            discount: 24,
+            articleNumber: "HSK-426018",
+            width: "103.2cm",
+            depth: "46.5 cm",
+>>>>>>> main
             image: "/images/products/set.jpg",
           },
         ],
@@ -47,6 +71,14 @@ const categories = [
               "Kompakter Waschtisch mit Unterschrank – ideal für kleine Bäder.",
             price: 499.99,
             stock: 15,
+<<<<<<< HEAD
+=======
+            oldPrice: 1179.0,
+            discount: 24,
+            articleNumber: "HSK-426018",
+            width: "103.2cm",
+            depth: "46.5 cm",
+>>>>>>> main
             image: "/images/products/waschtisch1.jpg",
           },
           {
@@ -56,6 +88,14 @@ const categories = [
               "Luxuriöser Waschtisch mit doppelseitigem Unterschrank und Marmorplatte.",
             price: 899.99,
             stock: 4,
+<<<<<<< HEAD
+=======
+            oldPrice: 1179.0,
+            discount: 24,
+            articleNumber: "HSK-426018",
+            width: "103.2cm",
+            depth: "46.5 cm",
+>>>>>>> main
             image: "/images/products/waschtisch2.jpg",
           },
           {
@@ -65,6 +105,14 @@ const categories = [
               "Skandinavischer Stil: Heller Waschtisch mit Holzoptik-Unterschrank.",
             price: 599.99,
             stock: 10,
+<<<<<<< HEAD
+=======
+            oldPrice: 1179.0,
+            discount: 24,
+            articleNumber: "HSK-426018",
+            width: "103.2cm",
+            depth: "46.5 cm",
+>>>>>>> main
             image: "/images/products/waschtisch3.jpg",
           },
         ],
@@ -80,6 +128,14 @@ const categories = [
               "Großer Spiegelschrank mit LED-Beleuchtung und Steckdose innen.",
             price: 399.99,
             stock: 9,
+<<<<<<< HEAD
+=======
+            oldPrice: 1179.0,
+            discount: 24,
+            articleNumber: "HSK-426018",
+            width: "103.2cm",
+            depth: "46.5 cm",
+>>>>>>> main
             image: "/images/products/spiegelschrank1.jpg",
           },
           {
@@ -88,6 +144,14 @@ const categories = [
             description: "Kompakter Spiegelschrank mit 2 Türen und Ablagen.",
             price: 299.99,
             stock: 18,
+<<<<<<< HEAD
+=======
+            oldPrice: 1179.0,
+            discount: 24,
+            articleNumber: "HSK-426018",
+            width: "103.2cm",
+            depth: "46.5 cm",
+>>>>>>> main
             image: "/images/products/spiegelschrank2.jpg",
           },
           {
@@ -97,6 +161,14 @@ const categories = [
               "Eleganter Spiegelschrank mit Touch-Sensor und Dimmfunktion.",
             price: 499.99,
             stock: 7,
+<<<<<<< HEAD
+=======
+            oldPrice: 1179.0,
+            discount: 24,
+            articleNumber: "HSK-426018",
+            width: "103.2cm",
+            depth: "46.5 cm",
+>>>>>>> main
             image: "/images/products/spiegelschrank3.jpeg",
           },
         ],
@@ -118,6 +190,14 @@ const categories = [
               "Eck-Duschkabine aus Sicherheitsglas mit Schiebetüren.",
             price: 649.99,
             stock: 6,
+<<<<<<< HEAD
+=======
+            oldPrice: 1179.0,
+            discount: 24,
+            articleNumber: "HSK-426018",
+            width: "103.2cm",
+            depth: "46.5 cm",
+>>>>>>> main
             image: "/images/products/duschkabine1.jpg",
           },
           {
@@ -127,6 +207,14 @@ const categories = [
               "Offene Walk-In Duschkabine für ein modernes Badezimmergefühl.",
             price: 799.99,
             stock: 5,
+<<<<<<< HEAD
+=======
+            oldPrice: 1179.0,
+            discount: 24,
+            articleNumber: "HSK-426018",
+            width: "103.2cm",
+            depth: "46.5 cm",
+>>>>>>> main
             image: "/images/products/duschkabine2.jpeg",
           },
           {
@@ -136,6 +224,14 @@ const categories = [
               "Platzsparende Runddusche ideal für kleine Badezimmer.",
             price: 599.99,
             stock: 8,
+<<<<<<< HEAD
+=======
+            oldPrice: 1179.0,
+            discount: 24,
+            articleNumber: "HSK-426018",
+            width: "103.2cm",
+            depth: "46.5 cm",
+>>>>>>> main
             image: "/images/products/duschkabine3.jpg",
           },
         ],
@@ -151,6 +247,14 @@ const categories = [
               "Ultra-flache Duschwanne mit rutschhemmender Oberfläche.",
             price: 349.99,
             stock: 10,
+<<<<<<< HEAD
+=======
+            oldPrice: 1179.0,
+            discount: 24,
+            articleNumber: "HSK-426018",
+            width: "103.2cm",
+            depth: "46.5 cm",
+>>>>>>> main
             image: "/images/products/duschwanne1.jpg",
           },
           {
@@ -159,6 +263,14 @@ const categories = [
             description: "Klassische Duschwanne aus Sanitäracryl.",
             price: 299.99,
             stock: 12,
+<<<<<<< HEAD
+=======
+            oldPrice: 1179.0,
+            discount: 24,
+            articleNumber: "HSK-426018",
+            width: "103.2cm",
+            depth: "46.5 cm",
+>>>>>>> main
             image: "/images/products/duschwanne2.jpg",
           },
           {
@@ -167,6 +279,14 @@ const categories = [
             description: "Edle Steinoptik für luxuriöse Badezimmer.",
             price: 499.99,
             stock: 7,
+<<<<<<< HEAD
+=======
+            oldPrice: 1179.0,
+            discount: 24,
+            articleNumber: "HSK-426018",
+            width: "103.2cm",
+            depth: "46.5 cm",
+>>>>>>> main
             image: "/images/products/duschwanne3.jpg",
           },
         ],
@@ -188,6 +308,14 @@ const categories = [
               "Elegante freistehende Wanne für ultimatives Badeerlebnis.",
             price: 1199.99,
             stock: 4,
+<<<<<<< HEAD
+=======
+            oldPrice: 1179.0,
+            discount: 24,
+            articleNumber: "HSK-426018",
+            width: "103.2cm",
+            depth: "46.5 cm",
+>>>>>>> main
             image: "/images/products/badewann1.jpg",
           },
           {
@@ -197,6 +325,14 @@ const categories = [
               "Komfort-Badewanne mit ergonomischer Form und Armlehnen.",
             price: 999.99,
             stock: 6,
+<<<<<<< HEAD
+=======
+            oldPrice: 1179.0,
+            discount: 24,
+            articleNumber: "HSK-426018",
+            width: "103.2cm",
+            depth: "46.5 cm",
+>>>>>>> main
             image: "/images/products/badewanne2.jpg",
           },
           {
@@ -205,6 +341,14 @@ const categories = [
             description: "Nachhaltige Badewanne aus recyclebarem Material.",
             price: 899.99,
             stock: 9,
+<<<<<<< HEAD
+=======
+            oldPrice: 1179.0,
+            discount: 24,
+            articleNumber: "HSK-426018",
+            width: "103.2cm",
+            depth: "46.5 cm",
+>>>>>>> main
             image: "/images/products/badewann3.jpg",
           },
         ],
@@ -219,6 +363,14 @@ const categories = [
             description: "Moderner Badewannenaufsatz aus Klarglas.",
             price: 249.99,
             stock: 14,
+<<<<<<< HEAD
+=======
+            oldPrice: 1179.0,
+            discount: 24,
+            articleNumber: "HSK-426018",
+            width: "103.2cm",
+            depth: "46.5 cm",
+>>>>>>> main
             image: "/images/products/aufsatz.jpg",
           },
           {
@@ -227,6 +379,14 @@ const categories = [
             description: "Faltbarer Aufsatz für flexible Nutzung.",
             price: 199.99,
             stock: 17,
+<<<<<<< HEAD
+=======
+            oldPrice: 1179.0,
+            discount: 24,
+            articleNumber: "HSK-426018",
+            width: "103.2cm",
+            depth: "46.5 cm",
+>>>>>>> main
             image: "/images/products/aufsatz2.jpg",
           },
           {
@@ -235,6 +395,14 @@ const categories = [
             description: "Hochwertiger Aufsatz mit Beschichtung gegen Kalk.",
             price: 299.99,
             stock: 11,
+<<<<<<< HEAD
+=======
+            oldPrice: 1179.0,
+            discount: 24,
+            articleNumber: "HSK-426018",
+            width: "103.2cm",
+            depth: "46.5 cm",
+>>>>>>> main
             image: "/images/products/aufsatz3.jpg",
           },
         ],
@@ -249,6 +417,14 @@ const categories = [
             description: "Elegante Badewannenarmatur mit Thermostat.",
             price: 349.99,
             stock: 15,
+<<<<<<< HEAD
+=======
+            oldPrice: 1179.0,
+            discount: 24,
+            articleNumber: "HSK-426018",
+            width: "103.2cm",
+            depth: "46.5 cm",
+>>>>>>> main
             image: "/images/products/armaturen1.jpg",
           },
           {
@@ -257,6 +433,14 @@ const categories = [
             description: "Klassische Wannenarmatur mit Handbrause.",
             price: 299.99,
             stock: 12,
+<<<<<<< HEAD
+=======
+            oldPrice: 1179.0,
+            discount: 24,
+            articleNumber: "HSK-426018",
+            width: "103.2cm",
+            depth: "46.5 cm",
+>>>>>>> main
             image: "/images/products/armaturen2.jpg",
           },
           {
@@ -265,12 +449,411 @@ const categories = [
             description: "Minimalistische Badewannenarmatur aus Edelstahl.",
             price: 399.99,
             stock: 8,
+<<<<<<< HEAD
+=======
+            oldPrice: 1179.0,
+            discount: 24,
+            articleNumber: "HSK-426018",
+            width: "103.2cm",
+            depth: "46.5 cm",
+>>>>>>> main
             image: "/images/products/armaturen3.jpg",
           },
         ],
       },
     ],
   },
+<<<<<<< HEAD
+=======
+  {
+    id: "badheizkoerper",
+    name: "Badheizkörper",
+    subcategories: [
+      {
+        id: "handtuchheizkoerper",
+        name: "Handtuchheizkörper",
+        products: [
+          {
+            id: "25",
+            name: "Handtuchheizkörper Classic",
+            description: "Zeitloser Handtuchheizkörper aus Edelstahl.",
+            price: 249.99,
+            stock: 10,
+            image: "/images/products/handtuchheizkoerper1.jpg",
+          },
+          {
+            id: "26",
+            name: "Handtuchheizkörper Modern",
+            description: "Flacher Design-Heizkörper für moderne Bäder.",
+            price: 299.99,
+            stock: 7,
+            image: "/images/products/handtuchheizkoerper1.jpg",
+          },
+          {
+            id: "27",
+            name: "Handtuchheizkörper Premium",
+            description: "Hochwertiger Heizkörper mit schneller Aufheizung.",
+            price: 349.99,
+            stock: 5,
+            image: "/images/products/handtuchheizkoerper1.jpg",
+          },
+        ],
+      },
+      {
+        id: "elektroheizkoerper",
+        name: "Elektroheizkörper",
+        products: [
+          {
+            id: "28",
+            name: "Elektroheizkörper Slim",
+            description: "Kompakter Elektroheizkörper für kleine Räume.",
+            price: 299.99,
+            stock: 8,
+            image: "/images/products/elektroheizkoerper1.jpg",
+          },
+          {
+            id: "29",
+            name: "Elektroheizkörper Eco",
+            description: "Energieeffizienter Heizkörper mit Thermostat.",
+            price: 349.99,
+            stock: 6,
+            image: "/images/products/elektroheizkoerper1.jpg",
+          },
+          {
+            id: "30",
+            name: "Elektroheizkörper Design",
+            description: "Stylischer Elektroheizkörper in Schwarz-Matt.",
+            price: 399.99,
+            stock: 4,
+            image: "/images/products/elektroheizkoerper1.jpg",
+          },
+        ],
+      },
+      {
+        id: "flaechenheizkoerper",
+        name: "Flächenheizkörper",
+        products: [
+          {
+            id: "31",
+            name: "Flächenheizkörper Classic",
+            description:
+              "Flacher Flächenheizkörper für effiziente Wärmeverteilung.",
+            price: 399.99,
+            stock: 9,
+            image: "/images/products/flaechenheizkoerper1.jpg",
+          },
+          {
+            id: "32",
+            name: "Flächenheizkörper XL",
+            description: "Extra großer Flächenheizkörper für große Bäder.",
+            price: 499.99,
+            stock: 3,
+            image: "/images/products/flaechenheizkoerper1.jpg",
+          },
+          {
+            id: "33",
+            name: "Flächenheizkörper Design",
+            description:
+              "Modern designter Flächenheizkörper mit hoher Leistung.",
+            price: 549.99,
+            stock: 5,
+            image: "/images/products/flaechenheizkoerper1.jpg",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "badkeramik",
+    name: "Badkeramik",
+    subcategories: [
+      {
+        id: "waschtische",
+        name: "Waschtische & Waschbecken",
+        products: [
+          {
+            id: "34",
+            name: "Waschtisch Classic",
+            description: "Zeitloser Waschtisch aus Keramik in Weiß.",
+            price: 299.99,
+            stock: 12,
+            image: "/images/products/waschtisch-classic.jpg",
+          },
+          {
+            id: "35",
+            name: "Waschtisch Modern",
+            description: "Flacher Design-Waschtisch für moderne Badezimmer.",
+            price: 349.99,
+            stock: 8,
+            image: "/images/products/waschtisch-modern.jpg",
+          },
+          {
+            id: "36",
+            name: "Waschtisch Premium",
+            description: "Hochwertiger Waschtisch mit Nano-Beschichtung.",
+            price: 399.99,
+            stock: 6,
+            image: "/images/products/waschtisch-premium.jpg",
+          },
+        ],
+      },
+      {
+        id: "aufsatzwaschbecken",
+        name: "Aufsatzwaschbecken",
+        products: [
+          {
+            id: "37",
+            name: "Aufsatzwaschbecken Elegant",
+            description: "Elegantes Aufsatzwaschbecken aus Feinsteinzeug.",
+            price: 249.99,
+            stock: 10,
+            image: "/images/products/aufsatzwaschbecken-elegant.jpg",
+          },
+          {
+            id: "38",
+            name: "Aufsatzwaschbecken Oval",
+            description: "Ovales Aufsatzbecken für stilvolle Bäder.",
+            price: 279.99,
+            stock: 7,
+            image: "/images/products/aufsatzwaschbecken-oval.jpg",
+          },
+          {
+            id: "39",
+            name: "Aufsatzwaschbecken Minimal",
+            description: "Minimalistisches Design für moderne Bäder.",
+            price: 229.99,
+            stock: 9,
+            image: "/images/products/aufsatzwaschbecken-minimal.jpg",
+          },
+        ],
+      },
+      {
+        id: "handwaschbecken",
+        name: "Handwaschbecken",
+        products: [
+          {
+            id: "40",
+            name: "Handwaschbecken Kompakt",
+            description: "Kleines Handwaschbecken ideal für Gäste-WCs.",
+            price: 199.99,
+            stock: 15,
+            image: "/images/products/handwaschbecken-kompakt.jpg",
+          },
+          {
+            id: "41",
+            name: "Handwaschbecken Rund",
+            description: "Rundes Handwaschbecken mit moderner Optik.",
+            price: 219.99,
+            stock: 11,
+            image: "/images/products/handwaschbecken-rund.jpg",
+          },
+          {
+            id: "42",
+            name: "Handwaschbecken Eckig",
+            description: "Eckiges Design für kleine Bäder.",
+            price: 209.99,
+            stock: 13,
+            image: "/images/products/handwaschbecken-eckig.jpg",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "badarmaturen",
+    name: "Badarmaturen",
+    subcategories: [
+      {
+        id: "waschtischarmaturen",
+        name: "Waschtischarmaturen",
+        products: [
+          {
+            id: "43",
+            name: "Waschtischarmatur Modern",
+            description: "Moderne Waschtischarmatur mit Einhebelmischer.",
+            price: 199.99,
+            stock: 10,
+            image: "/images/products/waschtischarmatur-modern.jpg",
+          },
+          {
+            id: "44",
+            name: "Waschtischarmatur Classic",
+            description: "Klassische Waschtischarmatur aus Chrom.",
+            price: 179.99,
+            stock: 8,
+            image: "/images/products/waschtischarmatur-classic.jpg",
+          },
+          {
+            id: "45",
+            name: "Waschtischarmatur Premium",
+            description: "Premium-Waschtischarmatur mit Wasserfall-Auslauf.",
+            price: 249.99,
+            stock: 6,
+            image: "/images/products/waschtischarmatur-premium.jpg",
+          },
+        ],
+      },
+      {
+        id: "duscharmaturen",
+        name: "Duscharmaturen",
+        products: [
+          {
+            id: "46",
+            name: "Duscharmatur Thermostat",
+            description:
+              "Duscharmatur mit Thermostatfunktion für konstante Temperaturen.",
+            price: 229.99,
+            stock: 7,
+            image: "/images/products/duscharmatur-thermostat.jpg",
+          },
+          {
+            id: "47",
+            name: "Duscharmatur Minimal",
+            description: "Minimalistische Duscharmatur im modernen Design.",
+            price: 199.99,
+            stock: 9,
+            image: "/images/products/duscharmatur-minimal.jpg",
+          },
+          {
+            id: "48",
+            name: "Duscharmatur Komfort",
+            description: "Komfortable Duscharmatur mit großer Handbrause.",
+            price: 249.99,
+            stock: 5,
+            image: "/images/products/duscharmatur-komfort.jpg",
+          },
+        ],
+      },
+      {
+        id: "badewannenarmaturen",
+        name: "Badewannenarmaturen",
+        products: [
+          {
+            id: "49",
+            name: "Badewannenarmatur Elegance",
+            description: "Elegante Badewannenarmatur mit Handbrause.",
+            price: 299.99,
+            stock: 8,
+            image: "/images/products/badewannenarmatur-elegance.jpg",
+          },
+          {
+            id: "50",
+            name: "Badewannenarmatur Classic",
+            description: "Klassische 2-Griff Badewannenarmatur.",
+            price: 279.99,
+            stock: 7,
+            image: "/images/products/badewannenarmatur-classic.jpg",
+          },
+          {
+            id: "51",
+            name: "Badewannenarmatur Design",
+            description: "Design-Badewannenarmatur in Schwarz-Matt.",
+            price: 349.99,
+            stock: 4,
+            image: "/images/products/badewannenarmatur-design.jpg",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "zubehoer",
+    name: "Zubehör",
+    subcategories: [
+      {
+        id: "bad-accessoires",
+        name: "Bad-Accessoires",
+        products: [
+          {
+            id: "52",
+            name: "Handtuchhalter Modern",
+            description: "Moderner Handtuchhalter aus Edelstahl.",
+            price: 59.99,
+            stock: 20,
+            image: "/images/products/handtuchhalter-modern.jpg",
+          },
+          {
+            id: "53",
+            name: "Seifenspender Classic",
+            description: "Klassischer Seifenspender aus Keramik.",
+            price: 29.99,
+            stock: 25,
+            image: "/images/products/seifenspender-classic.jpg",
+          },
+          {
+            id: "54",
+            name: "Zahnputzbecher Premium",
+            description: "Edler Zahnputzbecher aus Glas.",
+            price: 24.99,
+            stock: 18,
+            image: "/images/products/zahnputzbecher-premium.jpg",
+          },
+        ],
+      },
+      {
+        id: "bad-zubehoer",
+        name: "Bad-Zubehör",
+        products: [
+          {
+            id: "55",
+            name: "Duschvorhang Weiß",
+            description: "Wasserabweisender Duschvorhang in schlichtem Weiß.",
+            price: 39.99,
+            stock: 15,
+            image: "/images/products/duschvorhang-weiss.jpg",
+          },
+          {
+            id: "56",
+            name: "Ablagekorb Edelstahl",
+            description: "Praktischer Ablagekorb für Duschutensilien.",
+            price: 49.99,
+            stock: 12,
+            image: "/images/products/ablagekorb-edelstahl.jpg",
+          },
+          {
+            id: "57",
+            name: "Badezimmerteppich Set",
+            description: "Rutschfester Badezimmerteppich im 2er Set.",
+            price: 69.99,
+            stock: 10,
+            image: "/images/products/badezimmerteppich-set.jpg",
+          },
+        ],
+      },
+      {
+        id: "accessoire-sets",
+        name: "Bad-Accessoire Sets",
+        products: [
+          {
+            id: "58",
+            name: "Bad-Set Elegant",
+            description: "4-teiliges Accessoire-Set im eleganten Design.",
+            price: 89.99,
+            stock: 8,
+            image: "/images/products/badset-elegant.jpg",
+          },
+          {
+            id: "59",
+            name: "Bad-Set Modern",
+            description:
+              "Modernes Set aus Seifenschale, Becher, Halter und Spender.",
+            price: 79.99,
+            stock: 10,
+            image: "/images/products/badset-modern.jpg",
+          },
+          {
+            id: "60",
+            name: "Bad-Set Natur",
+            description: "Accessoire-Set aus natürlichen Materialien.",
+            price: 99.99,
+            stock: 5,
+            image: "/images/products/badset-natur.jpg",
+          },
+        ],
+      },
+    ],
+  },
+>>>>>>> main
 ];
 
 export default categories;
