@@ -1,60 +1,44 @@
-// import { notFound } from "next/navigation";
-// import CategorySidebar from "../components/CategorySidebar.js";
-// import categories from "../lib/categories.js";
-// import Link from "next/link";
-// import ProductGrid from "../components/ProductGrid.js";
-// import products from "../lib/flatProducts.js";
+import { notFound } from "next/navigation";
+import CategorySidebar from "../../components/CategorySidebar.js";
+import categories from "../../lib/categories.js";
 
-// export default function subcategoryPage({ params }) {
-//   const { category, subcategory } = params;
+import ProductGrid from "../../components/ProductGrid.js";
+import products from "../../lib/flatProducts.js";
 
-//   const subcategoryObj = categories.subcategories.find((c) => c.slug === subcategory);
+export default function subcategoryPage({ params }) {
+  const { category, subcategory } = params;
 
-//   const currentCategory = categories.find((cat) => cat.slug === category);
-//   if (!currentCategory) return notFound();
-//   const categoryProducts = products.filter(
-//     (product) => product.category === category
-//   );
+  const subcategoryObj = categories.find((c) =>
+    c.subcategories.find((c) => c === subcategory)
+  );
 
-//   return (
-//     <div className="px-8 py-8">
-//       <div className="flex justify-center mb-8">
-//         <img
-//           src="/images/hero/hero1.jpeg"
-//           alt={`${category} Banner`}
-//           className="w-[80%] h-[350px] object-cover rounded-md"
-//         />
-//       </div>
+  const currentCategory = categories.find((cat) => cat.slug === category);
+  if (!currentCategory) return notFound();
+  const subcategoryProducts = products.filter(
+    (product) => product.subcategory === subcategory
+  );
 
-//       <div className="flex px-8">
-//         <CategorySidebar activeCategory={category} />
+  return (
+    <div className="px-8 py-8">
+      <div className="flex justify-center mb-8">
+        <img
+          src="/images/hero/hero1.jpeg"
+          alt={`${subcategory} Banner`}
+          className="w-[80%] h-[350px] object-cover rounded-md"
+        />
+      </div>
 
-//         <main className="flex-1 px-8">
-//           <h2 className="text-3xl font-bold mb-8 text-blue-700 text-center">
-//             {category.name}
-//           </h2>
+      <div className="flex px-8">
+        <CategorySidebar activeCategory={category} />
 
-//           <div className="grid gap-8 mt-10 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-//             {categoryObj.subcategories.map((sub) => (
-//               <Link
-//                 key={sub.slug}
-//                 href={`/${category}/${sub.slug}`}
-//                 className="flex flex-col items-center bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition"
-//               >
-//                 <img
-//                   src={sub.image}
-//                   alt={sub.name}
-//                   className="w-full h-40 object-cover rounded-md mb-4"
-//                 />
-//                 <p className="text-center text-base font-semibold text-blue-900">
-//                   {sub.name} →
-//                 </p>
-//               </Link>
-//             ))}
-//           </div>
-//           <ProductGrid products={categoryProducts} />
-//         </main>
-//       </div>
-//     </div>
-//   );
-// }
+        <main className="flex-1 px-8">
+          <h2 className="text-3xl font-bold mb-8 text-blue-700 text-center">
+            {subcategory.name}
+          </h2>
+
+          <ProductGrid products={subcategoryProducts} />
+        </main>
+      </div>
+    </div>
+  );
+}
