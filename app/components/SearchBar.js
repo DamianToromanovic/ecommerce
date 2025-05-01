@@ -5,6 +5,7 @@ import { useState } from "react";
 
 export default function SearchBar() {
   const [searchedTerm, setSearchedTerm] = useState("");
+  const [showResults, setShowResults] = useState(false);
 
   const filteredProducts = products
     .filter((p) => p.name.toLowerCase().includes(searchedTerm))
@@ -47,8 +48,13 @@ export default function SearchBar() {
   return (
     <div className="relative felx items-center">
       <input
+        onFocus={() => setShowResults(true)}
         value={searchedTerm}
-        onChange={(e) => setSearchedTerm(e.target.value)}
+        onChange={(e) => {
+          setSearchedTerm(e.target.value);
+          setShowResults(true);
+        }}
+        onBlur={() => setTimeout(() => setShowResults(false), 200)}
         type="text"
         placeholder="Suchbegriff"
         className="border border-gray-300 px-3 py-1 roundded-1-md focus:outline-none focus:ring-2 focus:ring-blue-400"
@@ -56,8 +62,11 @@ export default function SearchBar() {
       <button className="bg-blue-600 text-white px-4 py-1 rounded-r-md hover:bg-blue-700">
         🔍
       </button>
-      {searchedTerm && (
-        <div className="absolute top-full mt-2 left-1/2 -translate-x-1/2 w-full min-w-3xl max-w-5xl bg-white border border-gray-300 shadow-lg rounded-xl p-6 flex gap-8 z-50">
+      {searchedTerm && showResults && (
+        <div
+          onMouseEnter={() => setShowResults(true)}
+          className="absolute top-full mt-2 left-1/2 -translate-x-1/2 w-full min-w-3xl max-w-5xl bg-white border border-gray-300 shadow-lg rounded-xl p-6 flex gap-8 z-50"
+        >
           <div className="w-1/3">
             <h3 className="text-sm font-semibold text-gray-600 mb-3">
               Kategorien
