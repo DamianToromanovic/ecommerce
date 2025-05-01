@@ -5,9 +5,12 @@ import { useState } from "react";
 export default function ProductTabs() {
   const [activeTab, setActiveTab] = useState("beschreibung");
 
-  const sharedContent = (
+
+  // shared content for "Produktdaten"
+  const produktdatenContent = (
+
     <div className="mt-6 space-y-2 text-sm">
-      <h2 className="text-lg font-semibold text-gray-800">
+      <h2 className="text-lg font-semibold text-blue-900">
         Pelipal Serie 6040 Badmöbel Set 2-3 - 103 cm, Waschtisch wählbar,
         Spiegelschrank mit offenem Fach, Unterschrank, 2 Auszüge
       </h2>
@@ -75,74 +78,115 @@ export default function ProductTabs() {
   );
 
   return (
-    <div className="mt-6">
-      {/* Tabs Buttons */}
+    <div className="mt-8 w-full max-w-5xl mx-auto">
+      {/* Tabs  */}
       <div className="flex space-x-4  border-gray-300 rounded-t-md overflow-hidden">
-        <button
-          className={`py-2 px-14 text-sm font-medium border border-gray-300 ${
-            activeTab === "beschreibung"
-              ? "bg-white border-b-2 border-blue-600 text-blue-700"
-              : "bg-gray-100 text-gray-700 hover:bg-white"
-          }`}
-          onClick={() => setActiveTab("beschreibung")}
-        >
-          {" "}
-          Produktbeschreibung
-        </button>
-
-        <button
-          className={`py-2 px-14 text-sm font-medium border border-gray-300 ${
-            activeTab === "zubehör"
-              ? "bg-white border-b-2 border-blue-600 text-blue-700"
-              : "bg-gray-100 text-gray-700 hover:bg-white"
-          }`}
-          onClick={() => setActiveTab("zubehör")}
-        >
-          {" "}
-          Zubehör
-        </button>
-
-        <button
-          className={`py-2 px-14 text-sm font-medium border border-gray-300  ${
-            activeTab === "lieferung"
-              ? "bg-white border-b-2 border-blue-600 text-blue-700"
-              : "bg-gray-100 text-gray-700 hover:bg-white"
-          }`}
-          onClick={() => setActiveTab("lieferung")}
-        >
-          {" "}
-          Lieferung
-        </button>
-
-        <button
-          className={`py-2 px-14 text-sm font-medium border border-gray-300  ${
-            activeTab === "herstellerinformation"
-              ? "bg-white border-b-2 border-blue-600 text-blue-700"
-              : "bg-gray-100 text-gray-700 hover:bg-white"
-          }`}
-          onClick={() => setActiveTab("herstellerinformation")}
-        >
-          {" "}
-          Herstellerinformation
-        </button>
+        {[
+          "produktdaten",
+          "beschreibung",
+          "zubehör",
+          "lieferung",
+          "herstellerinformation",
+        ].map((tab) => (
+          <button
+            key={tab}
+            onClick={() => setActiveTab(tab)}
+            className={`py-2 px-9 text-sm font-medium border border-gray-300 ${
+              activeTab === tab
+                ? "bg-white border-b-2 border-blue-600 text-blue-700"
+                : "bg-gray-100 text-gray-700 hover:bg-white"
+            }`}
+          >
+            {tab === "beschreibung" && "Produktbeschreibung"}
+            {tab === "zubehör" && "Zubehör"}
+            {tab === "lieferung" && "Lieferung"}
+            {tab === "produktdaten" && "Produktdaten"}
+            {tab === "herstellerinformation" && "Herstellerinformation"}
+          </button>
+        ))}
       </div>
 
-      {/* Tabs Content */}
-      <div className="mt-4">
+      {/* content */}
+      <div className="border border-gray-300 bg-white rounded-md p-6 mt-2 shadow-sm min-h-[400px] w-full max-w-4xl mx-auto">
         {activeTab === "beschreibung" && (
-          <p>
-            Dies ist die Produktbeschreibung. Hier können sie alle wichtigen
-            info über das produkt lesen.
+          <p className="text-gray-700 text-base  leading-relaxed tracking-wide max-w-6xl">
+            Dieses stilvolle Badmöbel-Set kombiniert modernes Design mit hoher
+            Funktionalität und schafft Ordnung und Eleganz in jedem Badezimmer.
+            Hergestellt aus robustem, feuchtigkeitsresistentem Material mit
+            pflegeleichten Oberflächen, eignet sich das Set ideal für den
+            täglichen Gebrauch. Es umfasst einen Waschbeckenunterschrank, einen
+            Spiegelschrank sowie einen Hochschrank-alle mit viel Stauraum für
+            Handtücher, Pflegeprodukte und Zubehör. Das grifflose Design und die
+            Soft-Close-Funktion sorgen für eine ruhige, komfortable Nutzung.
+            Dank der klaren Linien und neutralen Farben passt sich das Set
+            harmonisch jeder Badeinrichtung an und lässt sich dank einfacher
+            Montage schnell aufbauen.
           </p>
         )}
 
         {activeTab === "zubehör" && (
-          <p>Zubehör: Alle relevanten Zubehörteile werden hier aufgelistet.</p>
+          <ul className="list-disc pl-5">
+            <li>
+              LED-Spiegelbeleuchtung-Energiesparend und ideal für tägliche
+              Pflege.
+            </li>
+            <li>
+              Waschbeckenarmatur (Chrom oder Schwarz)-Modernes Design mit Wasser
+              sparender Technik.
+            </li>
+            <li>
+              Waschbecken aus Keramik oder Glas-Pflegeleicht, kratzfest und
+              stilvoll.
+            </li>
+            <li>
+              Soft-Close-Schubladeneinsätze-Für Ordnung bei Kosmetik und
+              Pflegeprodukten.
+            </li>
+            <li>
+              Handtuchhalter zum Ankleben oder Schrauben-Platzsparend und
+              elegant.
+            </li>
+            <li>
+              Spiegelschrank mit integrierter Steckdose & Beleuchtung- Praktisch
+              für elektrische Geräte.
+            </li>
+            <li>
+              Hochwertiger Siphon-Verchromt oder matt, passend zum Möbeldesign.
+            </li>
+            <li>
+              Badezimmermatte im passenden Farbton-Rutschfest und waschbar.
+            </li>
+            <li>
+              Dekorative Aufbewahrungsboxen-Für Schubladen oder offene Regale.
+            </li>
+            <li>Wandhaken oder Hängesysteme-Mehr Stauraum ohne Bohren.</li>
+          </ul>
         )}
 
         {activeTab === "lieferung" && (
-          <p>
-            Lieferung: ca. 2-3 Wochen. Versandkostenfrei innerhalb Deutschlands.
+          <p className="text-gray-700 text-base  leading-relaxed tracking-wide max-w-6xl">
+            Die Lieferung erfolgt innerhalb von 3-5 Werktagen nach
+            Zahlungseingang. Das Badmöbel-Set wird sicher verpackt und per
+            Spedition bis zur Bordsteinkante geliefert. Eine Sendungsverfolgung
+            sowie eine Benachrichtigung zum Liefertermin erhalten Sie per
+            E-Mail. Bitte stellen Sie sicher, dass die Anlieferung an Ihrer
+            Adresse möglich ist.
+          </p>
+        )}
+
+        {activeTab === "produktdaten" && produktdatenContent}
+
+        {activeTab === "herstellerinformation" && (
+          <p className="text-gray-700 text-base  leading-relaxed tracking-wide max-w-6xl">
+            Dieses Badmöbel-Set wird von einem renommierten Hersteller
+            gefertigt, der sich seit über 20 Jahren auf hochwertige
+            Badezimmermöbel spezialisiert hat. Die Produkte zeichnen sich durch
+            modernes Design, langlebige Materialien und präzise Verarbeitung
+            aus. Alle Möbelstücke werden unter strengen Qualitätsstandards in
+            der EU produziert und regelmäßig geprüft. Der Hersteller legt großen
+            Wert auf Nachhaltigkeit, Funktionalität und Kundenzufriedenheit-für
+            ein Badezimmer, das nicht nur gut aussieht, sondern auch im Alltag
+            überzeugt.
           </p>
         )}
       </div>

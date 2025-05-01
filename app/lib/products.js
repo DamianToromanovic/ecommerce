@@ -20,6 +20,12 @@ const categories = [
             width: "103.2cm",
             depth: "46.5 cm",
             image: "/images/products/set1.png",
+            images: [
+              "/images/products/Badmöbel-Set Elegance1.avif",
+              "/images/products/Badmöbel-Set Elegance2.avif",
+              "/images/products/Badmöbel-Set Elegance3.avif",
+              "/images/products/Badmöbel-Set Elegance4.avif",
+            ],
           },
           {
             id: "2",
