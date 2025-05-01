@@ -5,7 +5,6 @@ import { useState } from "react";
 export default function ProductTabs() {
   const [activeTab, setActiveTab] = useState("beschreibung");
 
-  // shared content return
   const sharedContent = (
     <div className="mt-6 space-y-2 text-sm">
       <h2 className="text-lg font-semibold text-gray-800">
