@@ -1,7 +1,11 @@
 import { notFound } from "next/navigation";
 import products from "../../../lib/flatProducts.js";
+
 import ProductTabs from "@/app/components/ProductTabs.js";
 import ImageGallery from "@/app/components/ImageGallery.jsx";
+
+import ProductTabs from "../../../components/ProductTabs.js";
+
 
 export default function ProductDetailPage({ params }) {
   const { category, subcategory, id } = params;

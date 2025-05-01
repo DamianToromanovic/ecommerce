@@ -5,8 +5,10 @@ import { useState } from "react";
 export default function ProductTabs() {
   const [activeTab, setActiveTab] = useState("beschreibung");
 
+
   // shared content for "Produktdaten"
   const produktdatenContent = (
+
     <div className="mt-6 space-y-2 text-sm">
       <h2 className="text-lg font-semibold text-blue-900">
         Pelipal Serie 6040 Badmöbel Set 2-3 - 103 cm, Waschtisch wählbar,
