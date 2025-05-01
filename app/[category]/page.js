@@ -5,7 +5,7 @@ import Link from "next/link";
 import ProductGrid from "../components/ProductGrid.js";
 import products from "../lib/flatProducts.js";
 
-export default function BadarmaturenPage({ params }) {
+export default function CategoryPage({ params }) {
   const { category } = params;
 
   const categoryObj = categories.find((c) => c.slug === category);
@@ -15,8 +15,6 @@ export default function BadarmaturenPage({ params }) {
   const categoryProducts = products.filter(
     (product) => product.category === category
   );
-  console.log("category param:", category);
-  console.log("currentCategory:", currentCategory);
 
   return (
     <div className="px-8 py-8">
