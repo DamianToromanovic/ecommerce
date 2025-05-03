@@ -7,32 +7,32 @@ const topCategories = [
   {
     title: "Badmöbel-Sets",
     image: "/images/products/set2.jpg",
-    link: "/produkte/badmoebel-sets",
+    link: "badmoebel/badmoebel-sets",
   },
   {
     title: "Waschtische mit Unterschrank",
     image: "/images/products/waschtisch2.jpg",
-    link: "/produkte/waschtische",
+    link: "/badmoebel/waschtische",
   },
   {
     title: "Spiegelschränke",
     image: "/images/products/spiegelschrank1.jpg",
-    link: "/produkte/spiegelschraenke",
+    link: "/badmoebel/spiegelschraenke",
   },
   {
     title: "Duschkabinen",
     image: "/images/products/duschkabine1.jpg",
-    link: "/produkte/duschkabinen",
+    link: "/badmoebel/duschkabinen",
   },
   {
     title: "Duschwannen",
     image: "/images/products/duschwanne1.jpg",
-    link: "/produkte/duschwannen",
+    link: "/badmoebel/duschwannen",
   },
   {
     title: "Badewannen",
     image: "/images/products/badewann1.jpg",
-    link: "/produkte/badewannen",
+    link: "/badmoebel/badewannen",
   },
 ];
 
