@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import products from "../../../lib/flatProducts.js";
 
-import ImageGallery from "../../../components/ImageGallery.jsx";
+import ImageGallery from "../../../components/ImageGallery.js";
 
 import ProductTabs from "../../../components/ProductTabs.js";
 
@@ -28,21 +28,9 @@ export default function ProductDetailPage({ params }) {
 
       <div className="w-full md:w-[53%] px-8 mx-auto">
         <div className="flex flex-col md:flex-row gap-8">
-          {/* seidbar thumbnails */}
           <div className="flex flex-col md:flex-row gap-8 px-8 mx-auto max-w-[1200px] mt-6">
             <ImageGallery images={product.images} />
           </div>
-
-          {/* main image */}
-          {/* <div className="w-full md:w-3/5">
-            <img
-              src={product.image}
-              alt={product.name}
-              className="w-full h-auto object-contain rounded-lg shadow-md"
-            />
-          </div> */}
-
-          {/* product Details */}
 
           <div className="w-full md:w-[50%] rounded-lg p-6 space-y-5">
             <h1 className="text-3xl font-bold text-blue-700 ">

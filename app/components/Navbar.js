@@ -29,7 +29,7 @@ export default function Navbar() {
           href="/badmoebel"
           className="hover:text-blue-600 transition-colors"
         >
-          BADMÖBEL{" "}
+          BADMÖBEL
         </Link>
         <Link href="/duschen" className="hover:text-blue-600 transition-colors">
           DUSCHEN
@@ -41,7 +41,7 @@ export default function Navbar() {
           href="/badheizkoerper"
           className="hover:text-blue-600 transition-colors"
         >
-          BADHEIZKÖRPER{" "}
+          BADHEIZKÖRPER
         </Link>
         <Link
           href="/badkeramik"
@@ -59,7 +59,7 @@ export default function Navbar() {
           href="/zubehoer"
           className="hover:text-blue-600 transition-colors"
         >
-          ZUBEHÖR{" "}
+          ZUBEHÖR
         </Link>
       </div>
 
