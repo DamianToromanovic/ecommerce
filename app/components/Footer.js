@@ -21,7 +21,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-100 p-10 text-gray-800">
+    <footer style={{ backgroundcolor: "aqua", color: "black" }}>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         <div>
           <h3 className="text-xl font-bold mb-4">Sozial</h3>

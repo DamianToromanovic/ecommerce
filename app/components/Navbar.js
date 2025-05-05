@@ -2,6 +2,8 @@
 
 import Link from "next/link";
 
+import SearchBar from "./SearchBar.js";
+
 export default function Navbar() {
   return (
     <nav className="w-full">
@@ -13,16 +15,7 @@ export default function Navbar() {
           </div>
         </Link>
 
-        <div className=" felx items-center">
-          <input
-            type="text"
-            placeholder="Suchbegriff"
-            className="border border-gray-300 px-3 py-1 roundded-1-md focus:outline-none focus:ring-2 focus:ring-blue-400"
-          ></input>
-          <button className="bg-blue-600 text-white px-4 py-1 rounded-r-md hover:bg-blue-700">
-            🔍
-          </button>
-        </div>
+        <SearchBar />
 
         <div className="flex gap-6 text-2xl text-gray-600">
           <span className="cursor-pointer hover:text-blue-600">👤</span>
@@ -36,7 +29,7 @@ export default function Navbar() {
           href="/badmoebel"
           className="hover:text-blue-600 transition-colors"
         >
-          BADMÖBEL{" "}
+          BADMÖBEL
         </Link>
         <Link href="/duschen" className="hover:text-blue-600 transition-colors">
           DUSCHEN
@@ -48,7 +41,7 @@ export default function Navbar() {
           href="/badheizkoerper"
           className="hover:text-blue-600 transition-colors"
         >
-          BADHEIZKÖRPER{" "}
+          BADHEIZKÖRPER
         </Link>
         <Link
           href="/badkeramik"
@@ -66,7 +59,7 @@ export default function Navbar() {
           href="/zubehoer"
           className="hover:text-blue-600 transition-colors"
         >
-          ZUBEHÖR{" "}
+          ZUBEHÖR
         </Link>
       </div>
 
