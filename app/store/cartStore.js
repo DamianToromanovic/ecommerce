@@ -12,13 +12,16 @@ export const useCartStore = create(
 
         if (existing) {
           const updated = cart.map((i) =>
-            i.id === item.id ? { ...i, quantity: i.quantity + 1 } : i
+            i.id === item.id
+              ? { ...i, quantity: i.quantity + item.quantity }
+              : i
           );
           set({ cart: updated });
         } else {
-          set({ cart: [...cart, { ...item, quantity: 1 }] });
+          set({ cart: [...cart, { ...item, quantity: item.quantity || 1 }] });
         }
       },
+
       decreaseQuantity: (itemId) => {
         const cart = get().cart;
         const existing = cart.find((i) => i.id === itemId);
@@ -33,6 +36,18 @@ export const useCartStore = create(
           set({ cart: updated });
         }
       },
+      increaseQuantity: (itemId) => {
+        const cart = get().cart;
+        const existing = cart.find((i) => i.id === itemId);
+        if (!existing) return;
+
+        const updated = cart.map((i) =>
+          i.id === itemId ? { ...i, quantity: i.quantity + 1 } : i
+        );
+
+        set({ cart: updated });
+      },
+
       removeFromCart: (itemId) => {
         const cart = get().cart;
         const updated = cart.filter((i) => i.id !== itemId);
