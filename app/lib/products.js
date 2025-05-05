@@ -14,11 +14,17 @@ const categories = [
               "Modernes Badmöbel-Set mit Spiegel und Unterschrank in Hochglanz-Optik.",
             price: 899.99,
             stock: 12,
+<<<<<<< HEAD
+=======
             oldPrice: 1179.0,
             discount: 24,
             articleNumber: "HSK-426018",
             width: "103.2cm",
             depth: "46.5 cm",
+<<<<<<< HEAD
+>>>>>>> main
+            image: "/images/products/set1.png",
+=======
             image: "/images/products/Badmöbel-Set Elegance1.jpg",
             images: [
               "/images/products/Badmöbel-Set Elegance1.jpg",
@@ -26,6 +32,7 @@ const categories = [
               "/images/products/Badmöbel-Set Elegance3.jpg",
               "/images/products/Badmöbel-Set Elegance4.jpg",
             ],
+>>>>>>> main
           },
           {
             id: "2",
@@ -34,11 +41,17 @@ const categories = [
               "Klassisches Badmöbel-Set aus Massivholz für ein warmes Badezimmer-Ambiente.",
             price: 749.99,
             stock: 5,
+<<<<<<< HEAD
+=======
             oldPrice: 1179.0,
             discount: 24,
             articleNumber: "HSK-426018",
             width: "103.2cm",
             depth: "46.5 cm",
+<<<<<<< HEAD
+>>>>>>> main
+            image: "/images/products/set2.jpg",
+=======
             image: "/images/products/Badmöbel-Set Classic1.jpg",
             images: [
               "/images/products/Badmöbel-Set Classic1.jpg",
@@ -46,6 +59,7 @@ const categories = [
               "/images/products/Badmöbel-Set Classic3.jpg",
               "/images/products/Badmöbel-Set Classic4.jpg",
             ],
+>>>>>>> main
           },
           {
             id: "3",
@@ -54,11 +68,17 @@ const categories = [
               "Minimalistisches Badmöbel-Set mit großzügigem Stauraum und LED-Beleuchtung.",
             price: 699.99,
             stock: 8,
+<<<<<<< HEAD
+=======
             oldPrice: 1179.0,
             discount: 24,
             articleNumber: "HSK-426018",
             width: "103.2cm",
             depth: "46.5 cm",
+<<<<<<< HEAD
+>>>>>>> main
+            image: "/images/products/set.jpg",
+=======
             image: "/images/products/Badmöbel-Set Minimal1.jpg",
             images: [
               "/images/products/Badmöbel-Set Minimal1.jpg",
@@ -66,6 +86,7 @@ const categories = [
               "/images/products/Badmöbel-Set Minimal3.jpg",
               "/images/products/Badmöbel-Set Minimal4.jpg",
             ],
+>>>>>>> main
           },
         ],
       },
@@ -80,11 +101,17 @@ const categories = [
               "Kompakter Waschtisch mit Unterschrank – ideal für kleine Bäder.",
             price: 499.99,
             stock: 15,
+<<<<<<< HEAD
+=======
             oldPrice: 1179.0,
             discount: 24,
             articleNumber: "HSK-426018",
             width: "103.2cm",
             depth: "46.5 cm",
+<<<<<<< HEAD
+>>>>>>> main
+            image: "/images/products/waschtisch1.jpg",
+=======
             image: "/images/products/Waschtisch Urban3.jpg",
             images: [
               "/images/products/Waschtisch Urban1.jpg",
@@ -92,6 +119,7 @@ const categories = [
               "/images/products/Waschtisch Urban3.jpg",
               "/images/products/Waschtisch Urban4.jpg",
             ],
+>>>>>>> main
           },
           {
             id: "5",
@@ -100,11 +128,17 @@ const categories = [
               "Luxuriöser Waschtisch mit doppelseitigem Unterschrank und Marmorplatte.",
             price: 899.99,
             stock: 4,
+<<<<<<< HEAD
+=======
             oldPrice: 1179.0,
             discount: 24,
             articleNumber: "HSK-426018",
             width: "103.2cm",
             depth: "46.5 cm",
+<<<<<<< HEAD
+>>>>>>> main
+            image: "/images/products/waschtisch2.jpg",
+=======
             image: "/images/products/Waschtisch Deluxe4.jpg",
             images: [
               "/images/products/Waschtisch Deluxe1.jpg",
@@ -112,6 +146,7 @@ const categories = [
               "/images/products/Waschtisch Deluxe3.jpg",
               "/images/products/Waschtisch Deluxe4.jpg",
             ],
+>>>>>>> main
           },
           {
             id: "6",
@@ -120,11 +155,17 @@ const categories = [
               "Skandinavischer Stil: Heller Waschtisch mit Holzoptik-Unterschrank.",
             price: 599.99,
             stock: 10,
+<<<<<<< HEAD
+=======
             oldPrice: 1179.0,
             discount: 24,
             articleNumber: "HSK-426018",
             width: "103.2cm",
             depth: "46.5 cm",
+<<<<<<< HEAD
+>>>>>>> main
+            image: "/images/products/waschtisch3.jpg",
+=======
             image: "/images/products/Waschtisch Nordic1.jpg",
             images: [
               "/images/products/Waschtisch Nordic1.jpg",
@@ -132,6 +173,7 @@ const categories = [
               "/images/products/Waschtisch Nordic3.jpg",
               "/images/products/Waschtisch Nordic4.jpg",
             ],
+>>>>>>> main
           },
         ],
       },
@@ -146,11 +188,17 @@ const categories = [
               "Großer Spiegelschrank mit LED-Beleuchtung und Steckdose innen.",
             price: 399.99,
             stock: 9,
+<<<<<<< HEAD
+=======
             oldPrice: 1179.0,
             discount: 24,
             articleNumber: "HSK-426018",
             width: "103.2cm",
             depth: "46.5 cm",
+<<<<<<< HEAD
+>>>>>>> main
+            image: "/images/products/spiegelschrank1.jpg",
+=======
             image: "/images/products/Spiegelschrank Vision1.jpg",
             images: [
               "/images/products/Spiegelschrank Vision1.jpg",
@@ -158,6 +206,7 @@ const categories = [
               "/images/products/Spiegelschrank Vision3.jpg",
               "/images/products/Spiegelschrank Vision4.jpg",
             ],
+>>>>>>> main
           },
           {
             id: "8",
@@ -165,11 +214,17 @@ const categories = [
             description: "Kompakter Spiegelschrank mit 2 Türen und Ablagen.",
             price: 299.99,
             stock: 18,
+<<<<<<< HEAD
+=======
             oldPrice: 1179.0,
             discount: 24,
             articleNumber: "HSK-426018",
             width: "103.2cm",
             depth: "46.5 cm",
+<<<<<<< HEAD
+>>>>>>> main
+            image: "/images/products/spiegelschrank2.jpg",
+=======
             image: "/images/products/Spiegelschrank Compact1.jpg",
             images: [
               "/images/products/Spiegelschrank Compact1.jpg",
@@ -177,6 +232,7 @@ const categories = [
               "/images/products/Spiegelschrank Compact3.jpg",
               "/images/products/Spiegelschrank Compact4.jpg",
             ],
+>>>>>>> main
           },
           {
             id: "9",
@@ -185,11 +241,17 @@ const categories = [
               "Eleganter Spiegelschrank mit Touch-Sensor und Dimmfunktion.",
             price: 499.99,
             stock: 7,
+<<<<<<< HEAD
+=======
             oldPrice: 1179.0,
             discount: 24,
             articleNumber: "HSK-426018",
             width: "103.2cm",
             depth: "46.5 cm",
+<<<<<<< HEAD
+>>>>>>> main
+            image: "/images/products/spiegelschrank3.jpeg",
+=======
             image: "/images/products/Spiegelschrank Lux2.jpg",
             images: [
               "/images/products/Spiegelschrank Lux1.jpg",
@@ -197,6 +259,7 @@ const categories = [
               "/images/products/Spiegelschrank Lux3.jpg",
               "/images/products/Spiegelschrank Lux4.jpg",
             ],
+>>>>>>> main
           },
         ],
       },
@@ -217,11 +280,17 @@ const categories = [
               "Eck-Duschkabine aus Sicherheitsglas mit Schiebetüren.",
             price: 649.99,
             stock: 6,
+<<<<<<< HEAD
+=======
             oldPrice: 1179.0,
             discount: 24,
             articleNumber: "HSK-426018",
             width: "103.2cm",
             depth: "46.5 cm",
+<<<<<<< HEAD
+>>>>>>> main
+            image: "/images/products/duschkabine1.jpg",
+=======
             image: "/images/products/Duschkabine Corner1.jpg",
             images: [
               "/images/products/Duschkabine Corner1.jpg",
@@ -229,6 +298,7 @@ const categories = [
               "/images/products/Duschkabine Corner3.jpg",
               "/images/products/Duschkabine Corner4.jpg",
             ],
+>>>>>>> main
           },
           {
             id: "11",
@@ -237,11 +307,17 @@ const categories = [
               "Offene Walk-In Duschkabine für ein modernes Badezimmergefühl.",
             price: 799.99,
             stock: 5,
+<<<<<<< HEAD
+=======
             oldPrice: 1179.0,
             discount: 24,
             articleNumber: "HSK-426018",
             width: "103.2cm",
             depth: "46.5 cm",
+<<<<<<< HEAD
+>>>>>>> main
+            image: "/images/products/duschkabine2.jpeg",
+=======
             image: "/images/products/Walk-In Duschkabine1.jpg",
             images: [
               "/images/products/Walk-In Duschkabine1.jpg",
@@ -249,6 +325,7 @@ const categories = [
               "/images/products/Walk-In Duschkabine3.jpg",
               "/images/products/Walk-In Duschkabine4.jpg",
             ],
+>>>>>>> main
           },
           {
             id: "12",
@@ -257,11 +334,17 @@ const categories = [
               "Platzsparende Runddusche ideal für kleine Badezimmer.",
             price: 599.99,
             stock: 8,
+<<<<<<< HEAD
+=======
             oldPrice: 1179.0,
             discount: 24,
             articleNumber: "HSK-426018",
             width: "103.2cm",
             depth: "46.5 cm",
+<<<<<<< HEAD
+>>>>>>> main
+            image: "/images/products/duschkabine3.jpg",
+=======
             image: "/images/products/Runddusche Compact1.jpg",
             images: [
               "/images/products/Runddusche Compact1.jpg",
@@ -269,6 +352,7 @@ const categories = [
               "/images/products/Runddusche Compact3.jpg",
               "/images/products/Runddusche Compact4.jpg",
             ],
+>>>>>>> main
           },
         ],
       },
@@ -283,11 +367,17 @@ const categories = [
               "Ultra-flache Duschwanne mit rutschhemmender Oberfläche.",
             price: 349.99,
             stock: 10,
+<<<<<<< HEAD
+=======
             oldPrice: 1179.0,
             discount: 24,
             articleNumber: "HSK-426018",
             width: "103.2cm",
             depth: "46.5 cm",
+<<<<<<< HEAD
+>>>>>>> main
+            image: "/images/products/duschwanne1.jpg",
+=======
             image: "/images/products/Duschwanne Slim1.jpg",
             images: [
               "/images/products/Duschwanne Slim1.jpg",
@@ -295,6 +385,7 @@ const categories = [
               "/images/products/Duschwanne Slim3.jpg",
               "/images/products/Duschwanne Slim4.jpg",
             ],
+>>>>>>> main
           },
           {
             id: "14",
@@ -302,11 +393,17 @@ const categories = [
             description: "Klassische Duschwanne aus Sanitäracryl.",
             price: 299.99,
             stock: 12,
+<<<<<<< HEAD
+=======
             oldPrice: 1179.0,
             discount: 24,
             articleNumber: "HSK-426018",
             width: "103.2cm",
             depth: "46.5 cm",
+<<<<<<< HEAD
+>>>>>>> main
+            image: "/images/products/duschwanne2.jpg",
+=======
             image: "/images/products/Duschwanne Classic1.jpg",
             images: [
               "/images/products/Duschwanne Classic1.jpg",
@@ -314,6 +411,7 @@ const categories = [
               "/images/products/Duschwanne Classic3.jpg",
               "/images/products/Duschwanne Classic4.jpg",
             ],
+>>>>>>> main
           },
           {
             id: "15",
@@ -321,11 +419,17 @@ const categories = [
             description: "Edle Steinoptik für luxuriöse Badezimmer.",
             price: 499.99,
             stock: 7,
+<<<<<<< HEAD
+=======
             oldPrice: 1179.0,
             discount: 24,
             articleNumber: "HSK-426018",
             width: "103.2cm",
             depth: "46.5 cm",
+<<<<<<< HEAD
+>>>>>>> main
+            image: "/images/products/duschwanne3.jpg",
+=======
             image: "/images/products/Duschwanne Stone1.jpg",
             images: [
               "/images/products/Duschwanne Stone1.jpg",
@@ -333,6 +437,7 @@ const categories = [
               "/images/products/Duschwanne Stone3.jpg",
               "/images/products/Duschwanne Stone4.jpg",
             ],
+>>>>>>> main
           },
         ],
       },
@@ -353,11 +458,17 @@ const categories = [
               "Elegante freistehende Wanne für ultimatives Badeerlebnis.",
             price: 1199.99,
             stock: 4,
+<<<<<<< HEAD
+=======
             oldPrice: 1179.0,
             discount: 24,
             articleNumber: "HSK-426018",
             width: "103.2cm",
             depth: "46.5 cm",
+<<<<<<< HEAD
+>>>>>>> main
+            image: "/images/products/badewann1.jpg",
+=======
             image: "/images/products/Freistehende Badewanne Pure1.jpg",
             images: [
               "/images/products/Freistehende Badewanne Pure1.jpg",
@@ -365,6 +476,7 @@ const categories = [
               "/images/products/Freistehende Badewanne Pure3.jpg",
               "/images/products/Freistehende Badewanne Pure4.jpg",
             ],
+>>>>>>> main
           },
           {
             id: "17",
@@ -373,11 +485,17 @@ const categories = [
               "Komfort-Badewanne mit ergonomischer Form und Armlehnen.",
             price: 999.99,
             stock: 6,
+<<<<<<< HEAD
+=======
             oldPrice: 1179.0,
             discount: 24,
             articleNumber: "HSK-426018",
             width: "103.2cm",
             depth: "46.5 cm",
+<<<<<<< HEAD
+>>>>>>> main
+            image: "/images/products/badewanne2.jpg",
+=======
             image: "/images/products/Badewanne Relax1.jpg",
             images: [
               "/images/products/Badewanne Relax1.jpg",
@@ -385,6 +503,7 @@ const categories = [
               "/images/products/Badewanne Relax3.jpg",
               "/images/products/Badewanne Relax4.jpg",
             ],
+>>>>>>> main
           },
           {
             id: "18",
@@ -392,11 +511,17 @@ const categories = [
             description: "Nachhaltige Badewanne aus recyclebarem Material.",
             price: 899.99,
             stock: 9,
+<<<<<<< HEAD
+=======
             oldPrice: 1179.0,
             discount: 24,
             articleNumber: "HSK-426018",
             width: "103.2cm",
             depth: "46.5 cm",
+<<<<<<< HEAD
+>>>>>>> main
+            image: "/images/products/badewann3.jpg",
+=======
             image: "/images/products/Badewanne Eco1.jpg",
             images: [
               "/images/products/Badewanne Eco1.jpg",
@@ -404,6 +529,7 @@ const categories = [
               "/images/products/Badewanne Eco3.jpg",
               "/images/products/Badewanne Eco4.jpg",
             ],
+>>>>>>> main
           },
         ],
       },
@@ -417,11 +543,17 @@ const categories = [
             description: "Moderner Badewannenaufsatz aus Klarglas.",
             price: 249.99,
             stock: 14,
+<<<<<<< HEAD
+=======
             oldPrice: 1179.0,
             discount: 24,
             articleNumber: "HSK-426018",
             width: "103.2cm",
             depth: "46.5 cm",
+<<<<<<< HEAD
+>>>>>>> main
+            image: "/images/products/aufsatz.jpg",
+=======
             image: "/images/products/Badewannenaufsatz Glas1.jpg",
             images: [
               "/images/products/Badewannenaufsatz Glas1.jpg",
@@ -429,6 +561,7 @@ const categories = [
               "/images/products/Badewannenaufsatz Glas3.jpg",
               "/images/products/Badewannenaufsatz Glas4.jpg",
             ],
+>>>>>>> main
           },
           {
             id: "20",
@@ -436,11 +569,17 @@ const categories = [
             description: "Faltbarer Aufsatz für flexible Nutzung.",
             price: 199.99,
             stock: 17,
+<<<<<<< HEAD
+=======
             oldPrice: 1179.0,
             discount: 24,
             articleNumber: "HSK-426018",
             width: "103.2cm",
             depth: "46.5 cm",
+<<<<<<< HEAD
+>>>>>>> main
+            image: "/images/products/aufsatz2.jpg",
+=======
             image: "/images/products/Badewannenaufsatz Faltbar2.jpg",
             images: [
               "/images/products/Badewannenaufsatz Faltbar1.jpg",
@@ -448,6 +587,7 @@ const categories = [
               "/images/products/Badewannenaufsatz Faltbar3.jpg",
               "/images/products/Badewannenaufsatz Faltbar4.jpg",
             ],
+>>>>>>> main
           },
           {
             id: "21",
@@ -455,11 +595,17 @@ const categories = [
             description: "Hochwertiger Aufsatz mit Beschichtung gegen Kalk.",
             price: 299.99,
             stock: 11,
+<<<<<<< HEAD
+=======
             oldPrice: 1179.0,
             discount: 24,
             articleNumber: "HSK-426018",
             width: "103.2cm",
             depth: "46.5 cm",
+<<<<<<< HEAD
+>>>>>>> main
+            image: "/images/products/aufsatz3.jpg",
+=======
             image: "/images/products/Badewannenaufsatz Premium1.jpg",
             images: [
               "/images/products/Badewannenaufsatz Premium1.jpg",
@@ -467,6 +613,7 @@ const categories = [
               "/images/products/Badewannenaufsatz Premium3.jpg",
               "/images/products/Badewannenaufsatz Premium4.jpg",
             ],
+>>>>>>> main
           },
         ],
       },
@@ -480,11 +627,17 @@ const categories = [
             description: "Elegante Badewannenarmatur mit Thermostat.",
             price: 349.99,
             stock: 15,
+<<<<<<< HEAD
+=======
             oldPrice: 1179.0,
             discount: 24,
             articleNumber: "HSK-426018",
             width: "103.2cm",
             depth: "46.5 cm",
+<<<<<<< HEAD
+>>>>>>> main
+            image: "/images/products/armaturen1.jpg",
+=======
             image: "/images/products/Badewannenarmaturen1.jpg",
             images: [
               "/images/products/Badewannenarmaturen1.jpg",
@@ -492,6 +645,7 @@ const categories = [
               "/images/products/Badewannenarmaturen3.jpg",
               "/images/products/Badewannenarmaturen4.jpg",
             ],
+>>>>>>> main
           },
           {
             id: "23",
@@ -499,11 +653,17 @@ const categories = [
             description: "Klassische Wannenarmatur mit Handbrause.",
             price: 299.99,
             stock: 12,
+<<<<<<< HEAD
+=======
             oldPrice: 1179.0,
             discount: 24,
             articleNumber: "HSK-426018",
             width: "103.2cm",
             depth: "46.5 cm",
+<<<<<<< HEAD
+>>>>>>> main
+            image: "/images/products/armaturen2.jpg",
+=======
             image: "/images/products/Armatur Classic1.jpg",
             images: [
               "/images/products/Armatur Classic1.jpg",
@@ -511,6 +671,7 @@ const categories = [
               "/images/products/Armatur Classic3.jpg",
               "/images/products/Armatur Classic4.jpg",
             ],
+>>>>>>> main
           },
           {
             id: "24",
@@ -518,11 +679,17 @@ const categories = [
             description: "Minimalistische Badewannenarmatur aus Edelstahl.",
             price: 399.99,
             stock: 8,
+<<<<<<< HEAD
+=======
             oldPrice: 1179.0,
             discount: 24,
             articleNumber: "HSK-426018",
             width: "103.2cm",
             depth: "46.5 cm",
+<<<<<<< HEAD
+>>>>>>> main
+            image: "/images/products/armaturen3.jpg",
+=======
             image: "/images/products/Armatur Minimal1.jpg",
             images: [
               "/images/products/Armatur Minimal1.jpg",
@@ -530,11 +697,14 @@ const categories = [
               "/images/products/Armatur Minimal3.jpg",
               "/images/products/Armatur Minimal4.jpg",
             ],
+>>>>>>> main
           },
         ],
       },
     ],
   },
+<<<<<<< HEAD
+=======
   {
     id: "badheizkoerper",
     name: "Badheizkörper",
@@ -1139,6 +1309,7 @@ const categories = [
       },
     ],
   },
+>>>>>>> main
 ];
 
 export default categories;
