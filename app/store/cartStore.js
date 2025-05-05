@@ -67,6 +67,11 @@ export const useCartStore = create(
         const cart = get().cart;
         return cart.reduce((sum, item) => sum + item.quantity, 0);
       },
+      clearCart: () => {
+        const arr = [];
+        const cart = get().cart;
+        set({ cart: arr });
+      },
     }),
     {
       name: "cartStorage",
