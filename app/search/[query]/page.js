@@ -1,12 +1,12 @@
-import ProductGrid from "../components/ProductGrid.js";
-import products from "../lib/flatProducts.js";
-import CategorySidebar from "../components/CategorySidebar.js";
+import ProductGrid from "../../components/ProductGrid.js";
+import products from "../../lib/flatProducts.js";
+import CategorySidebar from "../../components/CategorySidebar.js";
 
 export default function Page({ params }) {
-  const { searchedTerm } = params;
+  const { query } = params;
 
   const matchingProducts = products.filter((p) =>
-    p.name.toLowerCase().includes(searchedTerm.toLowerCase())
+    p.name.toLowerCase().includes(query.toLowerCase())
   );
 
   return (

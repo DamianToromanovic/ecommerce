@@ -1,13 +1,14 @@
 "use client";
 
 import Link from "next/link";
-
+import { useCartStore } from "../store/cartStore.js";
 import SearchBar from "./SearchBar.js";
 
 export default function Navbar() {
+  const { getTotalQuantity } = useCartStore();
   return (
     <nav className="w-full">
-      <div className="flex justify-between items-center bg-gray-100 px-8 py-4">
+      <div className="relative flex justify-between items-center bg-gray-100 px-8 py-4">
         <Link href="/" className="flex flex-col text-blue-700 hover:opacity-80">
           <div>
             <span className="text-2xl font-bold">Badezimmer-Welt</span>
@@ -20,8 +21,14 @@ export default function Navbar() {
         <div className="flex gap-6 text-2xl text-gray-600">
           <span className="cursor-pointer hover:text-blue-600">👤</span>
           <span className="cursor-pointer hover:text-blue-600">❤️</span>
-          <Link href={"/cart"}>
+          <Link href="/cart" className="relative">
             <span className="cursor-pointer hover:text-blue-600">🛒</span>
+
+            {getTotalQuantity() > 0 && (
+              <span className="absolute top-5 left-5 bg-blue-100 border-2 border-blue-600 text-blue-600 text-xs px-2 py-0.5 rounded-full font-medium">
+                {getTotalQuantity()}
+              </span>
+            )}
           </Link>
         </div>
       </div>

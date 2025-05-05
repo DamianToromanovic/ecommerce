@@ -5,10 +5,20 @@ import products from "../../../lib/flatProducts.js";
 import ImageGallery from "../../../components/ImageGallery.js";
 import { useCartStore } from "@/app/store/cartStore.js";
 import ProductTabs from "../../../components/ProductTabs.js";
+import { useState } from "react";
 
 export default function ProductDetailPage({ params }) {
   const { category, subcategory, id } = params;
-  const { addToCart } = useCartStore();
+  const { addToCart, increaseQuantity, decreaseQuantity } = useCartStore();
+  const [added, setAdded] = useState();
+  const [quantity, setQuantity] = useState(1);
+
+  const handleAdd = () => {
+    addToCart({ ...product, quantity });
+    setAdded(true);
+    setTimeout(() => setAdded(false), 450);
+  };
+
   const product = products.find(
     (p) =>
       p.id === id && p.category === category && p.subcategory === subcategory
@@ -58,17 +68,29 @@ export default function ProductDetailPage({ params }) {
               Versandkostenfrei innerhalb Deutschlands
             </p>
 
-            <div className="flex items-center gap-2 mb-4 ">
-              <button className="px-2 py-1 border cursor-pointer">-</button>
-              <span>1</span>
-              <button className="px-2 py-1 border cursor-pointer">+</button>
+            <div className="flex items-center gap-2 mb-4">
+              <button
+                onClick={() => setQuantity((q) => Math.max(1, q - 1))}
+                className="px-2 py-1 border cursor-pointer"
+              >
+                -
+              </button>
+              <span>{quantity}</span>
+              <button
+                onClick={() => setQuantity((q) => q + 1)}
+                className="px-2 py-1 border cursor-pointer"
+              >
+                +
+              </button>
             </div>
 
             <button
-              onClick={() => addToCart(product)}
-              className="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800 transition w-full cursor-pointer"
+              onClick={handleAdd}
+              className={`px-4 py-2 rounded w-full transition cursor-pointer 
+    ${added ? "bg-green-600" : "bg-blue-700 hover:bg-blue-800"} 
+    text-white`}
             >
-              In den Warenkorb
+              {added ? "✔ Hinzugefügt" : "In den Warenkorb"}
             </button>
 
             <div className="grid grid-cols-2 gap-2">

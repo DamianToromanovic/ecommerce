@@ -59,9 +59,11 @@ export default function SearchBar() {
         placeholder="Suchbegriff"
         className="border border-gray-300 px-3 py-1 roundded-1-md focus:outline-none focus:ring-2 focus:ring-blue-400"
       ></input>
-      <button className="bg-blue-600 text-white px-4 py-1 rounded-r-md hover:bg-blue-700">
-        🔍
-      </button>
+      <Link href={`/search/${searchedTerm}`}>
+        <button className="bg-blue-600 text-white px-4 py-1 rounded-r-md hover:bg-blue-700">
+          🔍
+        </button>
+      </Link>
       {searchedTerm && showResults && (
         <div
           onMouseEnter={() => setShowResults(true)}
