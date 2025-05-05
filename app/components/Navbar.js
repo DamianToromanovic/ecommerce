@@ -20,7 +20,9 @@ export default function Navbar() {
         <div className="flex gap-6 text-2xl text-gray-600">
           <span className="cursor-pointer hover:text-blue-600">👤</span>
           <span className="cursor-pointer hover:text-blue-600">❤️</span>
-          <span className="cursor-pointer hover:text-blue-600">🛒</span>
+          <Link href={"/cart"}>
+            <span className="cursor-pointer hover:text-blue-600">🛒</span>
+          </Link>
         </div>
       </div>
 

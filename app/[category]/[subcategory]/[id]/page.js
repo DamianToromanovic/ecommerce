@@ -1,13 +1,14 @@
+"use client";
 import { notFound } from "next/navigation";
 import products from "../../../lib/flatProducts.js";
 
 import ImageGallery from "../../../components/ImageGallery.js";
-
+import { useCartStore } from "@/app/store/cartStore.js";
 import ProductTabs from "../../../components/ProductTabs.js";
 
 export default function ProductDetailPage({ params }) {
   const { category, subcategory, id } = params;
-
+  const { addToCart } = useCartStore();
   const product = products.find(
     (p) =>
       p.id === id && p.category === category && p.subcategory === subcategory
@@ -63,7 +64,10 @@ export default function ProductDetailPage({ params }) {
               <button className="px-2 py-1 border cursor-pointer">+</button>
             </div>
 
-            <button className="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800 transition w-full cursor-pointer">
+            <button
+              onClick={() => addToCart(product)}
+              className="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800 transition w-full cursor-pointer"
+            >
               In den Warenkorb
             </button>
 
