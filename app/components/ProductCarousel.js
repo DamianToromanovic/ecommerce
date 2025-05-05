@@ -46,7 +46,7 @@ export default function ProductCarousel() {
                   src={product.image}
                   alt={product.name}
                   fill
-                  className="object-cover"
+                  className="object-cover "
                 />
               </div>
               <div className="p-4 text-center">
