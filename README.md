@@ -8,9 +8,13 @@ Ein vollständig responsives und modernes E-Commerce-Frontend, entwickelt mit **
 
 > *(Screenshots können später ergänzt werden)*
 
-![Startseite Screenshot](./public/screenshots/home.png)
-![Produktseite Screenshot](./public/screenshots/product.png)
-![Warenkorb Screenshot](./public/screenshots/cart.png)
+![Screenshot Home](./public/images/githubreadme/pic1.png)
+![Screenshot Home2](./public/images/githubreadme/pic2.png)
+![Screenshot Home3](./public/images/githubreadme/pic3.png)
+![Screenshot list](./public/images/githubreadme/pic3.png)
+![Screenshot productDetailPage](./public/images/githubreadme/pic3.png)
+
+
 
 ---
 
