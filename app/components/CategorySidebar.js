@@ -5,7 +5,7 @@ import categories from "../lib/categories.js";
 
 export default function CategorySidebar({ activeCategory }) {
   return (
-    <aside className="hidden md:block w-[250px] bg-gray-100 p-4 border-r border-gray-300 rounded-md overflow-auto max-h">
+    <aside className="hidden md:block w-[250px] bg-gray-100 p-4 border-r border-gray-300 rounded-md overflow-auto max-h-[70vh] top-5 h-screen sticky ">
       {categories.map((cat) => (
         <div key={cat.slug} className="mb-6">
           <Link href={`/${cat.slug}`}>
