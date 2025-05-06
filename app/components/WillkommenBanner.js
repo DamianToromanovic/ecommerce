@@ -2,9 +2,9 @@
 
 export default function WelkommenBanner() {
   return (
-    <div className=" max-w-6xl mx-auto py-10 px-4 space-y-6">
+    <div className=" max-w-7xl mx-auto py-10 px-4 space-y-6">
       {/* banner */}
-      <div className="bg-blue-900 text-white rounded-md px-6 py-5 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div className="bg-blue-950 text-white rounded-md px-6 py-5 flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="font-bold px-6 py-2 text-2xl whitespace-nowrap ">
           10€ geschenkt
         </div>
@@ -17,7 +17,7 @@ export default function WelkommenBanner() {
         </p>
 
         {/* right */}
-        <button className="bg-orange-500 text-white font-semibold px-4 py-2 rounded hover:bg-orange-600 transition">
+        <button className="bg-orange-500 text-white font-bold px-6 py-2 text-2xl whitespace-nowrap rounded-2xl">
           Jetzt anmelden
         </button>
       </div>
