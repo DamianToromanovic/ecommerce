@@ -135,7 +135,7 @@ export default function SearchBar() {
             </div>
 
             <div className="text-right mt-4">
-              <Link href={"/search"}>
+              <Link href={`/search/${searchedTerm}`}>
                 <button className="text-sm text-blue-600 hover:underline">
                   Alle Ergebnisse anzeigen
                 </button>

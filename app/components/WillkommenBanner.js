@@ -3,26 +3,22 @@
 export default function WelkommenBanner() {
   return (
     <div className=" max-w-7xl mx-auto py-10 px-4 space-y-6">
-      {/* banner */}
       <div className="bg-blue-950 text-white rounded-md px-6 py-5 flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="font-bold px-6 py-2 text-2xl whitespace-nowrap ">
           10€ geschenkt
         </div>
 
-        {/* center */}
         <p className="text-sm md:text-base  text-center md:text-left">
           Abonnieren Sie unseren Newsletter und verpassen Sie keine Angebote.
           Als Willkommensgeschenk erhalten Sie einen Gutschein im Wert von 10€
           für Ihre erste Bestellung.
         </p>
 
-        {/* right */}
         <button className="bg-orange-500 text-white font-bold px-6 py-2 text-2xl whitespace-nowrap rounded-2xl">
           Jetzt anmelden
         </button>
       </div>
 
-      {/* text content */}
       <div className="space-y-4 text-gray-800">
         <h2 className="text-xl font-bold">
           Willkommen bei Badezimmer-Welt - Ihr Badshop für hochwertige Bad- und

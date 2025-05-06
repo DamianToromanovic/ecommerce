@@ -9,7 +9,6 @@ export default function ServiceSection() {
         </h2>
 
         <div className="mx-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-6 ">
-          {/* card 1 */}
           <div className="text-center space-y-2 bg-white p-6 rounded-lg shadow-md min-h-[200px] w-full">
             <img
               src="/images/icons/Thumbs.png"
@@ -25,7 +24,6 @@ export default function ServiceSection() {
             </p>
           </div>
 
-          {/* card 2 */}
           <div className="text-center space-y-2 bg-white p-6 rounded-lg shadow-md min-h-[200px] w-full">
             <img
               src="/images/icons/truck.png"
@@ -40,7 +38,6 @@ export default function ServiceSection() {
             </p>
           </div>
 
-          {/* card 3 */}
           <div className="text-center space-y-2 bg-white p-6 rounded-lg shadow-md min-h-[200px] w-full">
             <img
               src="/images/icons/Chat.png"
@@ -56,7 +53,6 @@ export default function ServiceSection() {
             </p>
           </div>
 
-          {/* card 4 */}
           <div className="text-center space-y-2 bg-white p-6 rounded-lg shadow-md min-h-[200px] w-full">
             <img
               src="/images/icons/Lock.jpg"

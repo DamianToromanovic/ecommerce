@@ -10,7 +10,6 @@ export default function ImageGallery({ images = [] }) {
 
   return (
     <div className="flex gap-4">
-      {/* Left side: 3 thumbnaills */}
       <div className="flex flex-col gap-2">
         {images.slice(0, 5).map((img, index) => (
           <img
@@ -23,7 +22,6 @@ export default function ImageGallery({ images = [] }) {
         ))}
       </div>
 
-      {/* right side mmain image */}
       <div>
         <img
           src={selectedImage}
