@@ -6,23 +6,10 @@ import Link from "next/link";
 import categories from "../lib/products";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import allProducts from "../lib/flatProducts";
 
 export default function ProductCarousel() {
-  const [products, setProducts] = useState([]);
-
-  useEffect(() => {
-    const featuredProducts = [];
-
-    categories.forEach((category) => {
-      category.subcategories.forEach((subcategory) => {
-        if (subcategory.products.length > 0) {
-          featuredProducts.push(subcategory.products[0]);
-        }
-      });
-    });
-
-    setProducts(featuredProducts);
-  }, []);
+  const products = allProducts;
 
   return (
     <section className="py-10 px-6 max-w-7xl mx-auto">
@@ -61,7 +48,7 @@ export default function ProductCarousel() {
                   {product.price.toFixed(2)} €
                 </p>
                 <Link
-                  href={`/produkte/${product.id}`}
+                  href={`/${product.category}/${product.subcategory}/${product.id}`}
                   className="mt-4 bg-gray-100 border rounded-2xl inline-block bg-primary  px-4 py-2 hover:bg-primary/90 transition"
                 >
                   Details ansehen →
