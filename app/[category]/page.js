@@ -52,6 +52,7 @@ export default function CategoryPage({ params }) {
               </Link>
             ))}
           </div>
+
           <ProductGrid products={categoryProducts} />
         </main>
       </div>
