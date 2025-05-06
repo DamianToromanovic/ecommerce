@@ -39,10 +39,7 @@ export default function CategoryPage({ params }) {
               Hier finden Sie Badmöbel und Zubehör von Markenherstellern zu
               fairen Preisen. Vom einzelnen Badschrank oder Spiegel bis zum
               kompletten Badmöbel-Set finden Sie in unserem Online-Shop alles
-              für Ihr Badezimmer.Mithilfe der folgenden Übersicht können Sie
-              Ihre Suche bereits grob eingrenzen. Natürlich stehen wir Ihnen bei
-              Fragen zum Thema Badezimmermöbel sowie bei allen anderen Fragen
-              rund um das Thema Bad gerne auch telefonisch zur Seite.
+              für Ihr Badezimmer.
             </p>
           </div>
 
