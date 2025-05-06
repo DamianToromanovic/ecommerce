@@ -26,8 +26,9 @@ export default function ProductCarousel() {
 
   return (
     <section className="py-10 px-6 max-w-7xl mx-auto">
-      <h2 className="text-3xl font-bold text-center mb-10">
-        Unsere Empfehlungen
+      <h2 className="flex items-center gap-4 text-2xl font-bold text-center justify-center mb-10">
+        <span>Unsere Empfehlungen </span>
+        <span className="flex-1 h-px bg-gray-300"></span>
       </h2>
 
       <Swiper
@@ -40,30 +41,30 @@ export default function ProductCarousel() {
       >
         {products.map((product) => (
           <SwiperSlide key={product.id}>
-            <div className="bg-white rounded-xl shadow-md overflow-hidden group hover:shadow-lg transition">
+            <div className="bg-white rounded-xl shadow-md overflow-hidden group hover:shadow-lg transition duration-300">
               <div className="relative w-full h-64">
                 <Image
                   src={product.image}
                   alt={product.name}
                   fill
-                  className="object-cover "
+                  className="object-cover w-full h-full "
                 />
               </div>
-              <div className="p-4 text-center">
-                <h3 className="text-lg font-semibold mb-2 group-hover:text-accent transition">
+              <div className="bg-gray-200 text-center py-2">
+                <h3 className=" font-medium text-2xl text-center font-serif mb-2 group-hover-text-accent  ">
                   {product.name}
                 </h3>
                 <p className="text-gray-500 text-sm mb-4">
                   {product.description}
                 </p>
-                <p className="text-xl font-bold text-primary">
+                <p className="text-lg font-semibold text-primary text-blue-700">
                   {product.price.toFixed(2)} €
                 </p>
                 <Link
                   href={`/produkte/${product.id}`}
-                  className="mt-4 inline-block bg-primary text-white px-4 py-2 rounded hover:bg-primary/90 transition"
+                  className="mt-4 bg-gray-100 border rounded-2xl inline-block bg-primary  px-4 py-2 hover:bg-primary/90 transition"
                 >
-                  Details ansehen
+                  Details ansehen →
                 </Link>
               </div>
             </div>

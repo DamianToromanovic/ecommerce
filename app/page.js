@@ -4,11 +4,13 @@ import Footer from "./components/Footer.js";
 import ProductCarousel from "./components/ProductCarousel.js";
 import ServiceSection from "./components/ServiceSection.js";
 import WelkommenBanner from "./components/WillkommenBanner.js";
+import BrandLogos from "./components/BrandLogos.js";
 
 export default function Home() {
   return (
     <>
       <Hero />
+      <BrandLogos />
       <TopCategories />
       <ServiceSection />
       <ProductCarousel />
