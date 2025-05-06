@@ -6,7 +6,7 @@ Ein vollständig responsives und modernes E-Commerce-Frontend, entwickelt mit **
 
 ## 📸 Vorschau
 
-> *(Screenshots können später ergänzt werden)*
+
 
 ![Screenshot Home](./public/images/githubreadme/pic1.png)
 
