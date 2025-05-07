@@ -5,10 +5,7 @@ import { useState } from "react";
 export default function ProductTabs() {
   const [activeTab, setActiveTab] = useState("beschreibung");
 
-
-  // shared content for "Produktdaten"
   const produktdatenContent = (
-
     <div className="mt-6 space-y-2 text-sm">
       <h2 className="text-lg font-semibold text-blue-900">
         Pelipal Serie 6040 Badmöbel Set 2-3 - 103 cm, Waschtisch wählbar,
@@ -58,8 +55,8 @@ export default function ProductTabs() {
           Die Select Frontfarben werden zum Schutz des Lacklaminats mit einer
           Schutzfolie geliefert und muss selbst entfernt werden. Dieses Badmöbel
           wird für Sie vormontiert. Zur Kippsicherung ist dies wandhängend zu
-          befestigen. Bei Auswahl "OHNE Hahnloch" verlängert sich die
-          Lieferzeit. Über den Liefertermin werden Sie zeitnah informiert.
+          befestigen. Bei Auswahl OHNE Hahnloch verlängert sich die Lieferzeit.
+          Über den Liefertermin werden Sie zeitnah informiert.
         </div>
         <div>
           <strong>Lieferzeit:</strong>
@@ -79,7 +76,6 @@ export default function ProductTabs() {
 
   return (
     <div className="mt-8 w-full max-w-5xl mx-auto">
-      {/* Tabs  */}
       <div className="flex space-x-4  border-gray-300 rounded-t-md overflow-hidden">
         {[
           "produktdaten",
@@ -106,7 +102,6 @@ export default function ProductTabs() {
         ))}
       </div>
 
-      {/* content */}
       <div className="border border-gray-300 bg-white rounded-md p-6 mt-2 shadow-sm min-h-[400px] w-full max-w-4xl mx-auto">
         {activeTab === "beschreibung" && (
           <p className="text-gray-700 text-base  leading-relaxed tracking-wide max-w-6xl">
