@@ -6,9 +6,10 @@ import ImageGallery from "../../../components/ImageGallery.js";
 import { useCartStore } from "@/app/store/cartStore.js";
 import ProductTabs from "../../../components/ProductTabs.js";
 import { useState } from "react";
+import { use } from "react";
 
 export default function ProductDetailPage({ params }) {
-  const { category, subcategory, id } = params;
+  const { category, subcategory, id } = use(params);
   const { addToCart, increaseQuantity, decreaseQuantity } = useCartStore();
   const [added, setAdded] = useState();
   const [quantity, setQuantity] = useState(1);

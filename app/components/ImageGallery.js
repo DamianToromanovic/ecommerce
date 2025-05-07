@@ -15,7 +15,7 @@ export default function ImageGallery({ images = [] }) {
         <div className="w-full max-w-[800px] relative aspect-[4/3]">
           <Image
             src={selectedImage}
-            alt={`Produktbild: ${product.name} - Ansicht ${index + 1}`}
+            alt={`Produktbild Ansicht`}
             fill
             className="object-cover rounded shadow"
             sizes="(max-width: 800px) 100vw, 800px"
