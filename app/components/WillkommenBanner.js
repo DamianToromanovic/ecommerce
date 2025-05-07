@@ -55,7 +55,6 @@ export default function WelkommenBanner() {
           Angebot deckt jeden Bedarf ab.
         </p>
         <p>
-          {" "}
           <strong>Tipp:</strong> Nutzen Sie die Suche in unserem Badshop, um
           gezielt die passenden Produkte für Ihre individuellen Anforderungen zu
           finden.
