@@ -15,7 +15,7 @@ export default function ImageGallery({ images = [] }) {
         <div className="w-full max-w-[800px] relative aspect-[4/3]">
           <Image
             src={selectedImage}
-            alt="Selected"
+            alt={`Produktbild: ${product.name} - Ansicht ${index + 1}`}
             fill
             className="object-cover rounded shadow"
             sizes="(max-width: 800px) 100vw, 800px"
@@ -26,7 +26,7 @@ export default function ImageGallery({ images = [] }) {
 
       <div className="flex gap-2 overflow-x-auto">
         {images.slice(0, 5).map((img, index) => (
-          <div
+          <button
             key={index}
             className="relative w-20 h-20 cursor-pointer rounded-md border-2 overflow-hidden"
             onClick={() => setSelectedImage(img)}
@@ -40,7 +40,7 @@ export default function ImageGallery({ images = [] }) {
               }`}
               sizes="80px"
             />
-          </div>
+          </button>
         ))}
       </div>
     </div>

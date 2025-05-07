@@ -1,9 +1,8 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import categories from "../lib/products";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import allProducts from "../lib/flatProducts";
@@ -65,7 +64,6 @@ export default function ProductCarousel() {
         ))}
       </Swiper>
 
-      {/* custom right-left arrow button */}
       <div className="custom-prev absolute top-1/2 left-2 -translate-y-1/2 z-10  text-black w-10 h-10 flex items-center justify-center rounded-md shadow-md cursor-pointer hover:bg-gray-200 ">
         ⬅️
       </div>

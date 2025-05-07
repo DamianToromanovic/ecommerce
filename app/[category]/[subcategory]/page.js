@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import CategorySidebar from "../../components/CategorySidebar.js";
 import categories from "../../lib/categories.js";
-
+import Image from "next/image.js";
 import ProductGrid from "../../components/ProductGrid.js";
 import products from "../../lib/flatProducts.js";
 
@@ -21,14 +21,16 @@ export default function subcategoryPage({ params }) {
   return (
     <div className="px-8 py-8 max-w-screen-xl mx-auto">
       <div className="flex justify-center mb-8">
-        <img
-          src="/images/hero/hero1.jpeg"
-          alt={`${subcategory} Banner`}
-          className="w-[95%] h-[350px] object-cover rounded-md"
+        <Image
+          src="/images/hero/hero5.avif"
+          alt={`${category} Banner`}
+          width={1200}
+          height={350}
+          className="w-full max-w-[1200px] h-[350px] object-cover rounded-md shadow-xl"
         />
       </div>
 
-      <div className="flex px-8">
+      <div className="flex gap-8">
         <CategorySidebar activeCategory={category} />
 
         <main className="flex-1 px-8">

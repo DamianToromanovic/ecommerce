@@ -37,7 +37,7 @@ export default function ProductDetailPage({ params }) {
         </span>
       </div>
 
-      <div className="w-full lg:flex lg:flex-col lg:justify-center px-8 mx-auto">
+      <main className="w-full lg:flex lg:flex-col lg:justify-center px-8 mx-auto">
         <div className="flex flex-col lg:flex-row lg:justify-center gap-8">
           <div className="w-full max-w-screen-lg mx-auto flex flex-col lg:flex-row gap-8 px-4 mt-6">
             <ImageGallery images={product.images} />
@@ -106,7 +106,7 @@ export default function ProductDetailPage({ params }) {
           </div>
         </div>
         <ProductTabs />
-      </div>
+      </main>
     </>
   );
 }

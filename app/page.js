@@ -9,12 +9,14 @@ import BrandLogos from "./components/BrandLogos.js";
 export default function Home() {
   return (
     <>
-      <Hero />
-      <BrandLogos />
-      <TopCategories />
-      <ServiceSection />
-      <ProductCarousel />
-      <WelkommenBanner />
+      <main>
+        <Hero />
+        <BrandLogos />
+        <TopCategories />
+        <ServiceSection />
+        <ProductCarousel />
+        <WelkommenBanner />
+      </main>
       <Footer />
     </>
   );
