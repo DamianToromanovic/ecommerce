@@ -6,8 +6,8 @@ rawData.forEach((category) => {
     subcategory.products.forEach((product) => {
       allProducts.push({
         ...product,
-        category: category.id || category.slug,
-        subcategory: subcategory.id || subcategory.slug,
+        category: category.id,
+        subcategory: subcategory.id,
       });
     });
   });

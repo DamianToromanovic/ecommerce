@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useCartStore } from "../store/cartStore.js";
 import SearchBar from "./SearchBar.js";
 import categories from "../lib/categories.js";
+import Image from "next/image.js";
 
 export default function Navbar() {
   const { getTotalQuantity } = useCartStore();
@@ -16,10 +17,14 @@ export default function Navbar() {
             href="/"
             className="flex flex-col text-blue-700 hover:opacity-80"
           >
-            <div>
-              <h1 className="text-2xl font-bold">Badezimmer-Welt</h1>
-              <p className="text-xs text-gray-600 mt-1">wir lieben Bäder</p>
-            </div>
+            <Image
+              src="/logo/BadeWelt Logo.png"
+              alt="Badezimmer-Welt Logo"
+              width={140}
+              height={50}
+              className="object-contain h-46 w-auto"
+              priority
+            />
           </Link>
 
           <SearchBar />
@@ -51,7 +56,7 @@ export default function Navbar() {
           <Link
             className="hover:text-blue-600 transition-colors"
             key={i}
-            href={c.slug}
+            href={`/${c.slug}`}
           >
             {c.title}
           </Link>

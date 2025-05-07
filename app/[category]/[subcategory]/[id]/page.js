@@ -37,16 +37,16 @@ export default function ProductDetailPage({ params }) {
         </span>
       </div>
 
-      <div className="w-full md:w-[53%] px-8 mx-auto">
-        <div className="flex flex-col md:flex-row gap-8">
-          <div className="flex flex-col md:flex-row gap-8 px-8 mx-auto max-w-[1200px] mt-6">
+      <div className="w-full lg:flex lg:flex-col lg:justify-center px-8 mx-auto">
+        <div className="flex flex-col lg:flex-row lg:justify-center gap-8">
+          <div className="w-full max-w-screen-lg mx-auto flex flex-col lg:flex-row gap-8 px-4 mt-6">
             <ImageGallery images={product.images} />
           </div>
 
-          <div className="w-full md:w-[50%] rounded-lg p-6 space-y-5">
-            <h1 className="text-3xl font-bold text-blue-700 ">
+          <div className="w-full  rounded-lg p-6 space-y-5">
+            <h2 className="text-3xl font-bold text-blue-700 ">
               {product.name}
-            </h1>
+            </h2>
 
             <p className="text-gray-600 text-sm  mb-1 ">
               {product.description}
@@ -83,24 +83,25 @@ export default function ProductDetailPage({ params }) {
                 +
               </button>
             </div>
-
-            <button
-              onClick={handleAdd}
-              className={`px-4 py-2 rounded w-full transition cursor-pointer 
+            <div className="flex flex-col gap-4 max-w-3xs">
+              <button
+                onClick={handleAdd}
+                className={`px-4 py-2 rounded w-full transition cursor-pointer 
     ${added ? "bg-green-600" : "bg-blue-700 hover:bg-blue-800"} 
     text-white`}
-            >
-              {added ? "✔ Hinzugefügt" : "In den Warenkorb"}
-            </button>
-
-            <div className="grid grid-cols-2 gap-2">
-              <button className="flex items-center justify-center gap-2  py-2 border rounded-md text-gray-700 bg-gray-300 shadow-sm hover:bg-gray-100 transition cursor-pointer">
-                <span>Artikel merken</span>
+              >
+                {added ? "✔ Hinzugefügt" : "In den Warenkorb"}
               </button>
 
-              <button className="flex items-center justify-center gap-2   py-2 border rounded-md text-gray-700 shadow-sm hover:bg-gray-100 bg-gray-300 transition cursor-pointer">
-                <span>Fragen zum Produkt</span>
-              </button>
+              <div className="grid grid-cols-2 gap-2">
+                <button className="flex items-center justify-center gap-2  py-2 border rounded-md text-gray-700 bg-gray-300 shadow-sm hover:bg-gray-100 transition cursor-pointer">
+                  <span>Artikel merken</span>
+                </button>
+
+                <button className="flex items-center justify-center gap-2   py-2 border rounded-md text-gray-700 shadow-sm hover:bg-gray-100 bg-gray-300 transition cursor-pointer">
+                  <span>Fragen zum Produkt</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>

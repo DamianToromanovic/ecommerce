@@ -2,7 +2,7 @@
 
 export default function WelkommenBanner() {
   return (
-    <div className=" max-w-7xl mx-auto py-10 px-4 space-y-6">
+    <section className=" max-w-7xl mx-auto py-10 px-4 space-y-6">
       <div className="bg-blue-950 text-white rounded-md px-6 py-5 flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="font-bold px-6 py-2 text-2xl whitespace-nowrap ">
           10€ geschenkt
@@ -90,6 +90,6 @@ export default function WelkommenBanner() {
           ...Weiter lesen
         </p>
       </div>
-    </div>
+    </section>
   );
 }

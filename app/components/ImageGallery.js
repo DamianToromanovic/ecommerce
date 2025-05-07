@@ -9,25 +9,27 @@ export default function ImageGallery({ images = [] }) {
   }, [images]);
 
   return (
-    <div className="flex gap-4">
-      <div className="flex flex-col gap-2">
+    <div className="flex flex-col gap-6 ">
+      <div className="flex justify-center items-center w-full ">
+        <img
+          src={selectedImage}
+          alt="Selected"
+          className="w-full max-w-[800px] h-auto object-cover rounded shadow"
+        />
+      </div>
+
+      <div className="flex  gap-2  overflow-x-auto ">
         {images.slice(0, 5).map((img, index) => (
           <img
             key={index}
             src={img}
             alt={`Thumbnail ${index + 1}`}
             onClick={() => setSelectedImage(img)}
-            className="w-full h-20 object-cover rounded-md mb-2"
-          ></img>
+            className={`cursor-pointer w-20 h-20 object-cover rounded-md border-2 ${
+              selectedImage === img ? "border-blue-600" : "border-transparent"
+            }`}
+          />
         ))}
-      </div>
-
-      <div>
-        <img
-          src={selectedImage}
-          alt="Selected"
-          className="w-[500px] h-[400px] object-cover rounded shadow"
-        ></img>
       </div>
     </div>
   );
