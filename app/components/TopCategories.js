@@ -6,7 +6,7 @@ import Link from "next/link";
 const topCategories = [
   {
     title: "Badmöbel-Sets",
-    image: "/images/products/Bad-Set Modern1.jpg",
+    image: "/images/products/set1.png",
     link: "badmoebel/badmoebel-sets",
   },
   {
