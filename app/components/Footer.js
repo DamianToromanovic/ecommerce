@@ -77,7 +77,7 @@ export default function Footer() {
           <Link href="/kontakt" className="hover:underline">
             Kontakt
           </Link>
-          <Link href="/aboutUs">über uns</a>
+          <Link href="/aboutUs">über uns</Link>
         </div>
         <p className="text-sm text-gray-600 mt-6">
           &copy; 2025 BadezimmerWelt. Alle Rechte vorbehalten.
