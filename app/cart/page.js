@@ -33,7 +33,7 @@ export default function CartPage() {
       <h1 className="text-2xl font-bold mb-6">Dein Warenkorb</h1>
 
       {cart.map((item) => (
-        <div key={item.id} className="border-b py-4 flex justify-between">
+        <div key={item.id} className=" py-4 flex justify-between">
           <div>
             <h2 className="font-semibold">{item.name}</h2>
             <p className="text-sm text-gray-500">{item.price} €</p>
