@@ -13,7 +13,6 @@ export default function ProductCarousel() {
   const products = allProducts;
 
   return (
-    // Parent wrapper made relative so arrows can be positioned absolutely inside it
     <section className=" relative py-10 px-6 max-w-7xl mx-auto">
       <h2 className="flex items-center gap-4 text-2xl font-bold text-center justify-center mb-10">
         <span>Unsere Empfehlungen </span>

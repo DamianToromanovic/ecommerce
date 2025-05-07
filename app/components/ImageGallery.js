@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 export default function ImageGallery({ images = [] }) {
   const [selectedImage, setSelectedImage] = useState(images[0]);
@@ -11,24 +12,35 @@ export default function ImageGallery({ images = [] }) {
   return (
     <div className="flex flex-col gap-6 ">
       <div className="flex justify-center items-center w-full ">
-        <img
-          src={selectedImage}
-          alt="Selected"
-          className="w-full max-w-[800px] h-auto object-cover rounded shadow"
-        />
+        <div className="w-full max-w-[800px] relative aspect-[4/3]">
+          <Image
+            src={selectedImage}
+            alt="Selected"
+            fill
+            className="object-cover rounded shadow"
+            sizes="(max-width: 800px) 100vw, 800px"
+            priority
+          />
+        </div>
       </div>
 
-      <div className="flex  gap-2  overflow-x-auto ">
+      <div className="flex gap-2 overflow-x-auto">
         {images.slice(0, 5).map((img, index) => (
-          <img
+          <div
             key={index}
-            src={img}
-            alt={`Thumbnail ${index + 1}`}
+            className="relative w-20 h-20 cursor-pointer rounded-md border-2 overflow-hidden"
             onClick={() => setSelectedImage(img)}
-            className={`cursor-pointer w-20 h-20 object-cover rounded-md border-2 ${
-              selectedImage === img ? "border-blue-600" : "border-transparent"
-            }`}
-          />
+          >
+            <Image
+              src={img}
+              alt={`Thumbnail ${index + 1}`}
+              fill
+              className={`object-cover ${
+                selectedImage === img ? "border-blue-600" : "border-transparent"
+              }`}
+              sizes="80px"
+            />
+          </div>
         ))}
       </div>
     </div>
