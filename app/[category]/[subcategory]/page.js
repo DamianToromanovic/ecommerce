@@ -19,12 +19,12 @@ export default function subcategoryPage({ params }) {
   );
 
   return (
-    <div className="px-8 py-8">
+    <div className="px-8 py-8 max-w-screen-xl mx-auto">
       <div className="flex justify-center mb-8">
         <img
           src="/images/hero/hero1.jpeg"
           alt={`${subcategory} Banner`}
-          className="w-[80%] h-[350px] object-cover rounded-md"
+          className="w-[95%] h-[350px] object-cover rounded-md"
         />
       </div>
 
