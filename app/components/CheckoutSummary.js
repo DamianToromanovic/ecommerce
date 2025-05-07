@@ -5,7 +5,7 @@ export default function CheckoutSummary() {
   const { cart, getTotalPrice } = useCartStore();
 
   return (
-    <div className="border rounded-lg p-4 shadow">
+    <div className=" rounded-lg p-4 shadow">
       <h2 className="text-xl font-bold mb-4">Bestellung</h2>
       {cart.map((item, i) => (
         <div key={i} className="flex justify-between text-sm mb-2">
