@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 "use client";
 import { useState, useEffect } from "react";
 export default function ImageGallery({ images = [] }) {
@@ -28,3 +29,6 @@ export default function ImageGallery({ images = [] }) {
     </div>
   );
 }
+=======
+
+>>>>>>> cb5796d797051216224123f64a732616900b079e
