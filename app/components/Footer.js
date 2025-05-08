@@ -63,22 +63,6 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex items-center gap-3">
-          <img
-            src="/images/icons/ssl-secure.jpg"
-            alt="SSL Sicher"
-            className="w-16"
-          ></img>
-          <div className="text-xs text-black">
-            <p>
-              {" "}
-              :stern: :stern: :stern: :stern: :stern:
-              <span className="ml-1">4,75</span>
-            </p>
-            <p className="text-[10px] text-gray-500">Sichere Verbindung</p>
-          </div>
-        </div>
-
         <div className="bg-gradient-to-r from-blue-800 to-blue-600 text-white py-3 w-full mt-6">
           <div className="flex flex-col md:flex-row justify-between items-center w-full px-6 md:px-16  gap-4 ">
             <div className="flex gap-6 flex-wrap justify-center md:justify-start ">

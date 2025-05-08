@@ -11,18 +11,15 @@ export default function Navbar() {
 
   return (
     <header className="w-full shadow">
-      <div className="bg-gray-100 px-4 py-4 sm:px-8">
+      <div className="bg-gray-100 px-4 py-2 sm:px-8">
         <div className="flex sm:flex-row justify-between items-center gap-4 w-full">
-          <Link
-            href="/"
-            className="flex flex-col text-blue-700 hover:opacity-80"
-          >
+          <Link href="/" className="flex flex-col ">
             <Image
-              src="/logo/BadeWelt Logo.png"
+              src="/logo/logoo.jpg"
               alt="Badezimmer-Welt Logo"
-              width={140}
-              height={50}
-              className="object-contain h-46 w-auto"
+              width={200}
+              height={60}
+              className="object-contain h-16 w-auto"
               priority
             />
           </Link>
