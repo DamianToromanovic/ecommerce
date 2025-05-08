@@ -18,7 +18,7 @@ export default function ProductDetailPage({ params }) {
   };
 
   const decrease = () => {
-    if (quantity > 0) {
+    if (quantity >= 1) {
       setQuantity(quantity - 1);
     } else return;
   };
