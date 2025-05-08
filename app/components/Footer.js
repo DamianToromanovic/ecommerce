@@ -1,5 +1,4 @@
 "use client";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
@@ -8,14 +7,11 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
-
 export default function Footer() {
   return (
     <footer className="mt-6">
-      {/* Top Footer Section */}
       <div className="bg-gray-100 w-full px-6 md:px-16 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-screen mx-auto px-4 text-sm text-gray-700  ">
-          {/* column 1 */}
           <div>
             <h3 className="font-bold text-gray-800 mb-4">WIR HELFEN IHNEN</h3>
             <ul className="space-y-1">
@@ -32,7 +28,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Column 2 */}
           <div>
             <h3 className="font-bold text-gray-800 mb-4">
               KUNDENINFORMATIONEN
@@ -50,7 +45,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Column 3 */}
           <div>
             <h3 className="font-bold text-gray-800 mb-4">UNTERNEHMEN</h3>
             <ul space-y-1>
@@ -69,7 +63,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* rating badges */}
         <div className="flex items-center gap-3">
           <img
             src="/images/icons/ssl-secure.jpg"
@@ -79,16 +72,15 @@ export default function Footer() {
           <div className="text-xs text-black">
             <p>
               {" "}
-              ⭐ ⭐ ⭐ ⭐ ⭐<span className="ml-1">4,75</span>
+              :stern: :stern: :stern: :stern: :stern:
+              <span className="ml-1">4,75</span>
             </p>
             <p className="text-[10px] text-gray-500">Sichere Verbindung</p>
           </div>
         </div>
 
-        {/* Bottom Footer */}
         <div className="bg-gradient-to-r from-blue-800 to-blue-600 text-white py-3 w-full mt-6">
           <div className="flex flex-col md:flex-row justify-between items-center w-full px-6 md:px-16  gap-4 ">
-            {/* left links */}
             <div className="flex gap-6 flex-wrap justify-center md:justify-start ">
               <Link href="/impressum" className="hover:underline">
                 Impressum
@@ -102,7 +94,6 @@ export default function Footer() {
               <Link href="/aboutUs"></Link>
             </div>
 
-            {/* Social icon */}
             <div className="flex gap-4">
               <FontAwesomeIcon
                 icon={faFacebook}
@@ -123,7 +114,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* copyrigth */}
           <div className="text-center text-xs py-2 border-t border-blue-800">
             &copy; 2025 BadezimmerWelt. Alle Rechte vorbehalten
           </div>

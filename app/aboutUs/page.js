@@ -11,27 +11,12 @@ export default function AboutUs() {
           <p>Ihr Partner für stilvolle Badezimmermöbel & moderne Ausstattung</p>
         </div>
 
-        <img src="/images/Luxusbadezimmer.jpg" alt="Luxusbadezimmer" />
-        <img
-          src="/images/media.media.Badezimmer.jpg"
-          alt="Modernes Badezimmer"
-        />
-
         <div style={{ backgroundColor: "lightpink" }}>
           <p>
             Stilvolle Badezimmermöbel. Funktionale Ausstattung. Liebe zum
             Detail.
           </p>
         </div>
-
-        <img
-          src="/images/luxus-sauna-im-badezimmer-aus-eichenholz-und-espe-mit-versteckter-saunabeleuchtung-integrierter-decken-lichtleiste-und-grossflaechige-dunkle-verglasung-deisl-1.avif"
-          alt="Luxus Sauna"
-        />
-        <img
-          src="/images/metris-mixer-hotel-das-goldberg-bathtub_ambiance_16x9.jpg"
-          alt="Design-Badewanne"
-        />
 
         <div style={{ backgroundColor: "lemonchiffon" }}>
           <h2>Unsere Leidenschaft</h2>
@@ -40,14 +25,6 @@ export default function AboutUs() {
             Funktion und Qualität im Bad. Wir vereinen traditionelles Handwerk
             mit modernen Designideen - für Wohlfühlbäder, die begeistern.
           </p>
-          <img
-            src="/images/ideen-fliesen-badezimmer-jpg-webp-1440x960.webp"
-            alt="Fliesenideen"
-          />
-          <img
-            src="/images/japanische-badezimmer_brillianteye_immoportal.jpg"
-            alt="Japanisches Badezimmer"
-          />
         </div>
 
         <div style={{ backgroundColor: "lavenderblush" }}>
@@ -58,8 +35,6 @@ export default function AboutUs() {
             <li>✓ Accessoires für mehr Komfort & Ordnung</li>
             <li>✓ Maßanfertigungen & persönliche Beratung</li>
           </ul>
-          <img src="/images/Download (5).jpeg" alt="Badmöbel Beispiel 1" />
-          <img src="/images/images (1).jpeg" alt="Badmöbel Beispiel 2" />
         </div>
 
         <div style={{ backgroundColor: "lightskyblue" }}>
@@ -72,11 +47,6 @@ export default function AboutUs() {
             Beratung, die hochwertigen Materialien und unsere Liebe zum Detail.
             Ob Neubau oder Renovierung - wir begleiten Sie bei jedem Schritt.
           </p>
-          <img src="/images/jpg.jpeg" alt="Wellness-Bad" />
-          <img
-            src="/images/ratgeber-vinylboden-im-badezimmer.jpg"
-            alt="Vinylboden im Bad"
-          />
         </div>
 
         <div style={{ backgroundColor: "lightseagreen" }}>

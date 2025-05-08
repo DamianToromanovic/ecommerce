@@ -1,13 +1,10 @@
 "use client";
 import { useState, useEffect } from "react";
-
 export default function ImageGallery({ images = [] }) {
   const [selectedImage, setSelectedImage] = useState(images[0]);
-
   useEffect(() => {
     setSelectedImage(images[0]);
   }, [images]);
-
   return (
     <div className="flex flex-col md:flex-row gap-4">
       <div className="flex  md:flex-col gap-2 justify-center md:justify-start">
@@ -21,7 +18,6 @@ export default function ImageGallery({ images = [] }) {
           ></img>
         ))}
       </div>
-
       <div>
         <img
           src={selectedImage}

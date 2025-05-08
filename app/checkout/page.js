@@ -6,7 +6,6 @@ import CheckoutSummary from "../components/CheckoutSummary.js";
 export default function CheckoutPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-100 to-blue-200 px-4 py-16 flex flex-col items-center">
-      {/* Gutscheincode section */}
       <div className="w-full max-w-4xl  rounded-xl shadow-lg p-6 mb-6 text-center">
         <h2 className="text-3xl font-bold text-blue-700 mb-2">
           Gutscheincode einlösen
@@ -26,9 +25,7 @@ export default function CheckoutPage() {
         </div>
       </div>
 
-      {/* Checkout section */}
       <div className="grid grid-cols-1 md:grid-cols-2 max-w-5xl w-full bg-white rounded-xl shadow-lg overflow-hidden">
-        {/* left side */}
         <div className="bg-white p-8">
           <h2 className="text-2xl font-semibold mb-6 text-blue-700 font-serif text-center">
             Lieferdetails
@@ -36,7 +33,6 @@ export default function CheckoutPage() {
           <CheckoutForm />
         </div>
 
-        {/* Right side summary */}
         <div className="bg-blue-500 p-8 text-white">
           <CheckoutSummary />
           <Link href={"/thank-you"}>
