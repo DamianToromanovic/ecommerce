@@ -11,7 +11,7 @@ export default function ProductTabs() {
         Pelipal Serie 6040 Badmöbel Set 2-3 - 103 cm, Waschtisch wählbar,
         Spiegelschrank mit offenem Fach, Unterschrank, 2 Auszüge
       </h2>
-      <div className="grid grid-cols-2 gap-4 mt-4 text-gray-700">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4 text-gray-700">
         <div>
           <strong>Artikelnummer:</strong>
         </div>
@@ -75,8 +75,8 @@ export default function ProductTabs() {
   );
 
   return (
-    <div className="mt-8 w-full max-w-5xl mx-auto">
-      <div className="flex space-x-4  border-gray-300 rounded-t-md overflow-hidden">
+    <div className="mt-8 w-full max-w-5xl mx-auto px-4 sm:px-0">
+      <div className="flex flex-wrap justify-center gap-8 sm:space-x-4  space-x-4  border-gray-300 rounded-t-md overflow-hidden">
         {[
           "produktdaten",
           "beschreibung",
@@ -87,7 +87,7 @@ export default function ProductTabs() {
           <button
             key={tab}
             onClick={() => setActiveTab(tab)}
-            className={`py-2 px-9 text-sm font-medium border border-gray-300 ${
+            className={`py-2 px-8 text-sm font-medium border border-gray-300 ${
               activeTab === tab
                 ? "bg-white border-b-2 border-blue-600 text-blue-700"
                 : "bg-gray-100 text-gray-700 hover:bg-white"
@@ -102,9 +102,9 @@ export default function ProductTabs() {
         ))}
       </div>
 
-      <div className="border border-gray-300 bg-white rounded-md p-6 mt-2 shadow-sm min-h-[400px] w-full max-w-4xl mx-auto">
+      <div className="border border-gray-300 bg-white rounded-md p-6 mt-2 shadow-sm min-h-[400px] w-full max-w-7xl mx-auto">
         {activeTab === "beschreibung" && (
-          <p className="text-gray-700 text-base  leading-relaxed tracking-wide max-w-6xl">
+          <p className="text-gray-700 text-base  leading-relaxed tracking-wide max-w-full sm:max-w-4xl">
             Dieses stilvolle Badmöbel-Set kombiniert modernes Design mit hoher
             Funktionalität und schafft Ordnung und Eleganz in jedem Badezimmer.
             Hergestellt aus robustem, feuchtigkeitsresistentem Material mit

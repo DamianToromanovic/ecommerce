@@ -9,15 +9,15 @@ export default function ImageGallery({ images = [] }) {
   }, [images]);
 
   return (
-    <div className="flex gap-4">
-      <div className="flex flex-col gap-2">
+    <div className="flex flex-col md:flex-row gap-4">
+      <div className="flex  md:flex-col gap-2 justify-center md:justify-start">
         {images.slice(0, 5).map((img, index) => (
           <img
             key={index}
             src={img}
             alt={`Thumbnail ${index + 1}`}
             onClick={() => setSelectedImage(img)}
-            className="w-full h-20 object-cover rounded-md mb-2"
+            className="w-full h-25 object-cover rounded-md border hover:ring-2 ring-blue-500 cursor-pointer "
           ></img>
         ))}
       </div>
@@ -26,7 +26,7 @@ export default function ImageGallery({ images = [] }) {
         <img
           src={selectedImage}
           alt="Selected"
-          className="w-[500px] h-[400px] object-cover rounded shadow"
+          className=" w-full max:w-[500px] h-[420px] md:h-[480px ] object-cover rounded shadow"
         ></img>
       </div>
     </div>
