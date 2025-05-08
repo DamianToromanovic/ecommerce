@@ -62,8 +62,6 @@ export default function AboutUs() {
             Wir hoffen, wir können Sie überzeugen, unseren Onlineshop zu
             besuchen und das passende Produkt für Ihr Traumbad zu finden!
           </p>
-          <img src="/images/images (5).jpeg" alt="Produktbeispiel 1" />
-          <img src="/images/images (7).jpeg" alt="Produktbeispiel 2" />
         </div>
       </main>
     </>
