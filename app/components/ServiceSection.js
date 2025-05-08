@@ -1,4 +1,4 @@
-"use client";
+import Image from "next/image";
 
 export default function ServiceSection() {
   return (
@@ -10,11 +10,14 @@ export default function ServiceSection() {
 
         <div className="mx-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-6 ">
           <div className="text-center space-y-2 bg-white p-6 rounded-lg shadow-md min-h-[200px] w-full">
-            <img
+            <Image
               src="/images/icons/Thumbs.png"
               alt="Markenware"
-              className="w-12 h-12 mx-auto mb-4"
+              width={48}
+              height={48}
+              className="mx-auto mb-4"
             />
+
             <h3 className="font-semibold text-gray-800">
               Markenware zu Online-Preisen
             </h3>
@@ -25,10 +28,12 @@ export default function ServiceSection() {
           </div>
 
           <div className="text-center space-y-2 bg-white p-6 rounded-lg shadow-md min-h-[200px] w-full">
-            <img
+            <Image
               src="/images/icons/truck.png"
-              alt="Versandkostenfreie "
-              className="w-12 h-12 mx-auto mb-4"
+              alt="Versandkostenfrei"
+              width={48}
+              height={48}
+              className="mx-auto mb-4"
             />
             <h3 className="font-semibold text-gray-800">
               VERSANDKOSTEN FREI *
@@ -39,10 +44,12 @@ export default function ServiceSection() {
           </div>
 
           <div className="text-center space-y-2 bg-white p-6 rounded-lg shadow-md min-h-[200px] w-full">
-            <img
+            <Image
               src="/images/icons/Chat.png"
-              alt="Versandkostenfreie "
-              className="w-12 h-12 mx-auto mb-4"
+              alt="Versandkostenfrei"
+              width={48}
+              height={48}
+              className="mx-auto mb-4"
             />
             <h3 className="font-semibold text-gray-800">
               Kompetente Fachberatung
@@ -54,10 +61,12 @@ export default function ServiceSection() {
           </div>
 
           <div className="text-center space-y-2 bg-white p-6 rounded-lg shadow-md min-h-[200px] w-full">
-            <img
+            <Image
               src="/images/icons/Lock.jpg"
               alt="Sicher Einkaufen"
-              className="w-12 h-12 mx-auto mb-4"
+              width={48}
+              height={48}
+              className="mx-auto mb-4"
             />
             <h3 className="font-semibold text-gray-800">
               Sicher & geprüft einkaufen

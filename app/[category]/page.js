@@ -4,6 +4,7 @@ import categories from "../lib/categories.js";
 import Link from "next/link";
 import ProductGrid from "../components/ProductGrid.js";
 import products from "../lib/flatProducts.js";
+import Image from "next/image.js";
 
 export default function CategoryPage({ params }) {
   const { category } = params;
@@ -19,9 +20,11 @@ export default function CategoryPage({ params }) {
   return (
     <div className="px-8 py-8 max-w-screen-xl mx-auto">
       <div className="flex justify-center mb-8">
-        <img
+        <Image
           src="/images/hero/hero5.avif"
           alt={`${category} Banner`}
+          width={1200}
+          height={350}
           className="w-full max-w-[1200px] h-[350px] object-cover rounded-md shadow-xl"
         />
       </div>

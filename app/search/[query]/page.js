@@ -22,7 +22,7 @@ export default function Page({ params }) {
       <div className="flex px-8">
         <CategorySidebar />
 
-        <main className="flex-1 px-8">
+        <section className="flex-1 px-8">
           <h2 className="text-3xl font-bold mb-8 text-blue-700 text-center">
             Folgende Ergebnisse wurden gefunden
           </h2>
@@ -34,7 +34,7 @@ export default function Page({ params }) {
           ) : (
             <ProductGrid products={matchingProducts} />
           )}
-        </main>
+        </section>
       </div>
     </div>
   );

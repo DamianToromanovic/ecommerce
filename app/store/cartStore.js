@@ -69,7 +69,6 @@ export const useCartStore = create(
       },
       clearCart: () => {
         const arr = [];
-        const cart = get().cart;
         set({ cart: arr });
       },
     }),

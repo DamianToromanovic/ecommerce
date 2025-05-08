@@ -1,9 +1,8 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import categories from "../lib/products";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import allProducts from "../lib/flatProducts";
@@ -13,7 +12,6 @@ export default function ProductCarousel() {
   const products = allProducts;
 
   return (
-    // Parent wrapper made relative so arrows can be positioned absolutely inside it
     <section className=" relative py-10 px-6 max-w-7xl mx-auto">
       <h2 className="flex items-center gap-4 text-2xl font-bold text-center justify-center mb-10">
         <span>Unsere Empfehlungen </span>
@@ -66,7 +64,6 @@ export default function ProductCarousel() {
         ))}
       </Swiper>
 
-      {/* custom right-left arrow button */}
       <div className="custom-prev absolute top-1/2 left-2 -translate-y-1/2 z-10  text-black w-10 h-10 flex items-center justify-center rounded-md shadow-md cursor-pointer hover:bg-gray-200 ">
         ⬅️
       </div>
