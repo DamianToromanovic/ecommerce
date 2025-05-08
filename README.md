@@ -65,17 +65,17 @@ Ein vollständig responsives und modernes E-Commerce-Frontend, entwickelt mit **
 │   └── page.js                         # Startseite
 
 ├── components/                         # Wiederverwendbare UI-Komponenten
-│   ├── CategorySidebar.jsx
-│   ├── CheckoutForm.jsx
-│   ├── CheckoutSummary.jsx
-│   ├── Footer.jsx
-│   ├── Hero.jsx
-│   ├── ImageGallery.jsx
-│   ├── Navbar.jsx
-│   ├── ProductCard.jsx
-│   ├── ProductCarousel.jsx
-│   ├── ProductGrid.jsx
-│   └── SearchBar.jsx
+│   ├── CategorySidebar.js
+│   ├── CheckoutForm.js
+│   ├── CheckoutSummary.js
+│   ├── Footer.js
+│   ├── Hero.js
+│   ├── ImageGallery.js
+│   ├── Navbar.js
+│   ├── ProductCard.js
+│   ├── ProductCarousel.js
+│   ├── ProductGrid.js
+│   └── SearchBar.js
 │   └── ... (weitere Komponenten)
 
 ├── lib/                                # Statische Daten
