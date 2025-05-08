@@ -118,6 +118,7 @@ export default function ProductDetailPage({ params }) {
       <div className="mt-10 px-4">
         <ProductTabs />
       </div>
+      <div>hh</div>
     </>
   );
 }
