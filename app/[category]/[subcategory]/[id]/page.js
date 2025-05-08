@@ -30,13 +30,12 @@ export default function ProductDetailPage({ params }) {
           <span className="font-bold">hsk5</span>
         </span>
       </div>
-      {/* Main layout */}
+
       <div className="flex flex-col lg:flex-row gap-8 px-4 md:px-8 max-w-6xl mx-auto">
-        {/* Images Section */}
         <div className="w-full lg:w-[50%]">
           <ImageGallery images={product.images} />
         </div>
-        {/* Product info */}
+
         <div className="w-full lg:w-[50%] rounded-lg p-6 space-y-5">
           <h1 className="text-3xl text-center font-bold text-blue-700 font-serif ">
             {product.name}
@@ -60,7 +59,7 @@ export default function ProductDetailPage({ params }) {
               </p>
             </div>
           </div>
-          {/* Quantity sector */}
+
           <div className="flex justify-center items-center gap-2 mt-4">
             <button
               onClick={() => setQuantity((q) => Math.max(1, q - 1))}
@@ -76,7 +75,7 @@ export default function ProductDetailPage({ params }) {
               +
             </button>
           </div>
-          {/* Add to cart */}
+
           <button
             onClick={handleAdd}
             className={`px-4 py-2 rounded w-full transition cursor-pointer
@@ -85,7 +84,7 @@ export default function ProductDetailPage({ params }) {
           >
             {added ? ":starkes_häkchen: Hinzugefügt" : "In den Warenkorb"}
           </button>
-          {/* Action BUtton */}
+
           <div className="grid grid-cols-2 gap-2 mt-4">
             <button className="flex items-center justify-center gap-2  py-2 border rounded-md text-gray-700 bg-gray-300 shadow-sm hover:bg-gray-200 transition cursor-pointer">
               <span>Artikel merken</span>
@@ -96,7 +95,7 @@ export default function ProductDetailPage({ params }) {
           </div>
         </div>
       </div>
-      {/* Tab section */}
+
       <div className="mt-10 px-4">
         <ProductTabs />
       </div>
