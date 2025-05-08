@@ -15,6 +15,13 @@ export default function ProductDetailPage({ params }) {
     setAdded(true);
     setTimeout(() => setAdded(false), 450);
   };
+
+  const decrease = () => {
+    if (quantity > 0) {
+      setQuantity(quantity - 1);
+    } else return;
+  };
+
   const product = products.find(
     (p) =>
       p.id === id && p.category === category && p.subcategory === subcategory
@@ -62,14 +69,14 @@ export default function ProductDetailPage({ params }) {
 
           <div className="flex justify-center items-center gap-2 mt-4">
             <button
-              onClick={() => setQuantity((q) => Math.max(1, q - 1))}
+              onClick={decrease}
               className="px-2 py-1 border cursor-pointer"
             >
               -
             </button>
             <span>{quantity}</span>
             <button
-              onClick={() => setQuantity((q) => q + 1)}
+              onClick={() => setQuantity(quantity + 1)}
               className="px-2 py-1 border cursor-pointer"
             >
               +
@@ -82,7 +89,7 @@ export default function ProductDetailPage({ params }) {
     ${added ? "bg-green-600" : "bg-blue-700 hover:bg-blue-800"}
     text-white`}
           >
-            {added ? ":starkes_häkchen: Hinzugefügt" : "In den Warenkorb"}
+            {added ? "Hinzugefügt" : "In den Warenkorb"}
           </button>
 
           <div className="grid grid-cols-2 gap-2 mt-4">
@@ -99,7 +106,6 @@ export default function ProductDetailPage({ params }) {
       <div className="mt-10 px-4">
         <ProductTabs />
       </div>
-      <div>hh</div>
     </>
   );
 }
