@@ -10,16 +10,16 @@ export default function Page({ params }) {
   );
 
   return (
-    <div className="px-8 py-8">
+    <div className="px-8 py-8 max-w-screen-xl mx-auto">
       <div className="flex justify-center mb-8">
         <img
           src="/images/hero/hero1.jpeg"
           alt={`Banner`}
-          className="w-[80%] h-[350px] object-cover rounded-md"
+          className="w-full max-w-[1200px] h-[350px] object-cover rounded-md shadow-xl"
         />
       </div>
 
-      <div className="flex px-8">
+      <div className="flex gap-8">
         <CategorySidebar />
 
         <section className="flex-1 px-8">
