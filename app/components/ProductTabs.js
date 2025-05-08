@@ -76,7 +76,7 @@ export default function ProductTabs() {
 
   return (
     <div className="mt-8 w-full max-w-5xl mx-auto">
-      <div className="flex space-x-4  border-gray-300 rounded-t-md overflow-hidden">
+      <div className="flex space-x-4 justify-center border-gray-300 rounded-t-md overflow-hidden">
         {[
           "produktdaten",
           "beschreibung",
