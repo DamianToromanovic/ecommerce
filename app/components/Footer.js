@@ -75,7 +75,7 @@ export default function Footer() {
               <Link href="/kontakt" className="hover:underline">
                 Kontakt
               </Link>
-              <Link href="/aboutUs"></Link>
+              <Link href="/aboutUs">Über uns</Link>
             </div>
 
             <div className="flex gap-4">
