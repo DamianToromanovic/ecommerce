@@ -76,7 +76,7 @@ export default function SearchBar() {
       {searchedTerm && showResults && (
         <div
           onMouseEnter={() => setShowResults(true)}
-          className="hidden absolute top-full mt-2 left-1/2 -translate-x-1/2 w-full min-w-3xl max-w-5xl bg-white border border-gray-300 shadow-lg rounded-xl p-6 xl:flex gap-8 z-50"
+          className="hidden absolute top-full mt-2 left-1/2 -translate-x-1/2 w-full min-w-3xl max-w-5xl bg-white border border-gray-300 shadow-lg rounded-xl p-6 md:flex gap-8 z-50"
         >
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div>

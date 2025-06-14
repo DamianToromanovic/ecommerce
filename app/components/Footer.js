@@ -66,16 +66,16 @@ export default function Footer() {
         <div className="bg-gradient-to-r from-blue-800 to-blue-600 text-white py-3 w-full mt-6">
           <div className="flex flex-col md:flex-row justify-between items-center w-full px-6 md:px-16  gap-4 ">
             <div className="flex gap-6 flex-wrap justify-center md:justify-start ">
-              <Link href="/impressum" className="hover:underline">
+              <Link href="/" className="hover:underline">
                 Impressum
               </Link>
-              <Link href="/datenschutz" className="hover:underline">
+              <Link href="/" className="hover:underline">
                 Datenschutz
               </Link>
-              <Link href="/kontakt" className="hover:underline">
+              <Link href="/" className="hover:underline">
                 Kontakt
               </Link>
-              <Link href="/aboutUs">Über uns</Link>
+              <Link href="/">Über uns</Link>
             </div>
 
             <div className="flex gap-4">
